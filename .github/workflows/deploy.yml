@@ -9,8 +9,9 @@ jobs:
   deploy: # This name is the one to be used in `running-workflow-name`
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v1
+      - name: Login to Github Package Registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
       - name: Wait on tests
         uses: lewagon/wait-on-check-action@master
         with:
@@ -19,8 +20,9 @@ jobs:
           wait-interval: 10
           running-workflow-name: 'deploy' # HERE
       - name: Deploy to staging
-        env:
-            VAPOR_API_TOKEN: ${{ secrets.VAPOR_API_TOKEN }}
-        uses: teamnovu/vapor-action@master
-        with:
-            args: deploy staging
+        run: |
+        docker run \
+          --env VAPOR_API_TOKEN=${{ secrets.VAPOR_API_TOKEN }} \
+          --volume $(pwd):/app \
+          docker.pkg.github.com/ubient/laravel-vapor-action/laravel-vapor-action:latest \
+          deploy staging
