@@ -6,24 +6,20 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <title>Len Woodward | Tighten Application</title>
+
+        <style>
+            .bubbles {
+                background-color: #ffffff;
+                background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.09'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            }
+        </style>
     </head>
     <body class="antialiased">
 
 
 
 <div class="relative overflow-hidden bg-white">
-    <div class="hidden lg:block lg:absolute lg:inset-0" aria-hidden="true">
-      <svg class="absolute top-0 transform translate-x-64 -translate-y-8 left-1/2" width="640" height="784" fill="none" viewBox="0 0 640 784">
-        <defs>
-          <pattern id="9ebea6f4-a1f5-4d96-8c4e-4c2abf658047" x="118" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-          </pattern>
-        </defs>
-        <rect y="72" width="640" height="640" class="text-gray-50" fill="currentColor" />
-        <rect x="118" width="404" height="784" fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
-      </svg>
-    </div>
-    <div class="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
+    <div class="relative pt-6 pb-16 sm:pb-24 lg:pb-32 bubbles">
       <nav class="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6" aria-label="Global">
         <div class="flex items-center flex-1">
           <div class="flex items-center justify-between w-full md:w-auto">
@@ -42,13 +38,8 @@
             </div>
           </div>
           <div class="hidden md:block md:ml-10 md:space-x-10">
-            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Product</a>
-  
-            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
-  
-            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Marketplace</a>
-  
-            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a>
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Who am I?</a>
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">What am I good at?</a>
           </div>
         </div>
       </nav>
@@ -81,13 +72,8 @@
           </div>
           <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
             <div class="px-2 pt-2 pb-3 space-y-1" role="none">
-              <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">Product</a>
-  
-              <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">Features</a>
-  
-              <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">Marketplace</a>
-  
-              <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">Company</a>
+              <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">Who am I?</a>
+              <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">What am I good at?</a>
             </div>
           </div>
         </div>
