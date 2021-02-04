@@ -25,4 +25,4 @@ jobs:
           --env VAPOR_API_TOKEN=${{ secrets.VAPOR_API_TOKEN }} \
           --volume $(pwd):/app \
           docker.pkg.github.com/ubient/laravel-vapor-action/laravel-vapor-action:latest \
-          deploy staging
+          deploy staging \
