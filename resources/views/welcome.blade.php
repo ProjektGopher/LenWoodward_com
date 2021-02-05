@@ -38,8 +38,9 @@
             </div>
           </div>
           <div class="hidden md:block md:ml-10 md:space-x-10">
-            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Who am I?</a>
-            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">What am I good at?</a>
+            <a href="#who" class="font-medium text-gray-500 hover:text-gray-900">Who am I?</a>
+            <a href="#what" class="font-medium text-gray-500 hover:text-gray-900">What am I good at?</a>
+            <a href="#how" class="font-medium text-gray-500 hover:text-gray-900">How to reach me</a>
           </div>
         </div>
       </nav>
@@ -72,8 +73,9 @@
           </div>
           <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
             <div class="px-2 pt-2 pb-3 space-y-1" role="none">
-              <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">Who am I?</a>
-              <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">What am I good at?</a>
+              <a href="#who" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">Who am I?</a>
+              <a href="#what" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">What am I good at?</a>
+              <a href="#how" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">How to reach me</a>
             </div>
           </div>
         </div>
@@ -89,12 +91,12 @@
                 <span class="block text-gray-900">folks!</span>
               </span>
             </h1>
-            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              This is the Cool Capybara, and she'd like you to meet Len.
+            <p class="mt-3 text-lg text-gray-500 sm:mt-5 sm:text-xl lg:text-xl xl:text-2xl font-thin w-80">
+              This is the Cool Capybara, and she'd like you to meet <span class="font-extralight text-indigo-600">Len</span>.
             </p>
           </div>
           <div class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-            <x-capybara class="text-indigo-600 fill-current h-128" /><!-- I bought this SVG from Etsy for $4 :) -->
+            <x-capybara class="text-indigo-600 fill-current h-96 lg:h-96 xl:h-128" /><!-- I bought this SVG from Etsy for $4 :) -->
           </div>
         </div>
       </main>
@@ -103,10 +105,15 @@
 
   <div class="w-full pb-12 mt-32 bg-gradient-to-tr from-blue-300 to-blue-500 h-128">
       <div class="w-8/12 mx-auto">
+          <a id="who" class="sr-only">Who am I?</a>
           <img src="img/profile.png" alt="Len Woodward" class="inline h-64 -mt-32 border-8 border-gray-500 rounded-full">
           <span class="inline-block ml-4 text-4xl font-extrabold transform -rotate-6">What's up?</span>
           <span class="inline-block ml-4 text-4xl font-thin">My name's Len.</span>
           <span class="inline-block ml-1 text-2xl text-blue-100 opacity-75 font-extralight">(He/Him/His)</span>
+          <p class="font-extralight mt-4 text-gray-900 text-lg">
+            I live with my wife <a href="https://www.twitter.com/Ssshlyn" target="_blank" class="text-indigo-600">Ashlyn</a> about 40 minutes south of Vancouver, Canada, in Langley City.
+            I acknowlege that where I work, live, and play, is on the unceded territory of the Matsqui, Kwantlen, and Katzie communities.
+          </p>
       </div>
   </div>
 
