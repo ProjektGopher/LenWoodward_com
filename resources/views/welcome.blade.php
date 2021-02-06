@@ -93,39 +93,42 @@
                 <span class="block text-gray-900">folks!</span>
               </span>
             </h1>
-            <p class="mt-3 text-lg text-gray-500 sm:mt-5 sm:text-xl lg:text-xl xl:text-2xl font-thin w-80">
-              This is the Cool Capybara, and she'd like you to meet <span class="font-extralight text-indigo-600">Len</span>.
+            <p class="mt-3 text-lg font-thin text-gray-500 sm:mt-5 sm:text-xl lg:text-xl xl:text-2xl w-80">
+              This is the Cool Capybara, and she'd like you to meet <span class="text-indigo-600 font-extralight">Len</span>.
             </p>
           </div>
           <div class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-            <x-capybara class="text-indigo-600 fill-current mx-auto md:ml-0 h-64 md:h-96 xl:h-128" /><!-- I bought this SVG from Etsy for $4 :) -->
+            <x-capybara class="h-64 mx-auto text-indigo-600 fill-current md:ml-0 md:h-96 xl:h-128" /><!-- I bought this SVG from Etsy for $4 :) -->
           </div>
         </div>
       </main>
     </div>
   </div>
 
-  <div class="w-full pb-24 mt-32 bg-gradient-to-tr from-blue-300 to-blue-500 h-128">
+  <div class="w-full mt-32 bg-gradient-to-tr from-blue-300 to-blue-500 h-128">
       <div class="w-8/12 mx-auto">
           <a id="who" class="sr-only">Who am I?</a>
           <img src="img/profile.png" alt="Len Woodward" class="inline h-64 -mt-32 border-8 border-gray-500 rounded-full">
-          <span class="inline-block ml-4 text-4xl font-extrabold transform -rotate-3 md:-rotate-6 mt-12">What's up?</span>
+          <span class="inline-block mt-12 ml-4 text-4xl font-extrabold transform -rotate-3 md:-rotate-6">What's up?</span>
           <span class="inline-block ml-4 text-4xl font-thin">My name's Len.</span>
           <span class="inline-block ml-1 text-2xl text-blue-100 opacity-75 font-extralight">(He/Him/His)</span>
-          <p class="font-extralight mt-4 text-gray-900 text-lg">
+          <p class="mt-4 text-lg text-gray-900 xl:text-xl font-extralight">
             I live with my wife <a href="https://www.twitter.com/Ssshlyn" target="_blank" class="text-indigo-600">Ashlyn</a> about 40 minutes south of Vancouver, Canada, in Langley City.
             I acknowlege that where I work, live, and play, is on the unceded territory of the Matsqui, Kwantlen, and Katzie communities.
           </p>
-          <p class="font-extralight mt-4 text-gray-900 text-lg">
+          <p class="mt-4 text-lg text-gray-900 xl:text-xl font-extralight">
             I've been working with code in one form or another since about 2003 when I was writing Visual Basic in high school.
             I also started dabbling in some simple HTML at that time. I got my first paid programming gig in 2005.
             It was a membership based math tutoring app, but being fresh out of school, it was not good.
           </p>
       </div>
+      <svg class="w-full h-24 mt-24" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1440 79.6584C1410.22 98.8649 1023.24 130.442 773.857 108.956C441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584Z" fill="white"/>
+      </svg>        
   </div>
 
   <div class="w-full my-32">
-      <div class="w-8/12 mx-auto leading-loose text-lg font-extralight text-gray-900">
+      <div class="w-8/12 mx-auto text-lg leading-loose text-gray-900 font-extralight">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consequatur, nulla enim aut minima a excepturi dolor et libero? Eligendi cumque sequi a!
           Reiciendis consectetur exercitationem labore aliquam magnam alias.
       </div>
