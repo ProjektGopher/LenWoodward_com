@@ -13,22 +13,24 @@
                 background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.09'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
             }
         </style>
+
+        <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body class="antialiased">
 
 
 
 <div class="relative overflow-hidden bg-white">
-    <div class="relative pt-6 pb-16 sm:pb-24 lg:pb-32 bubbles">
+    <div x-data="{ navOpen: false }" class="relative pt-6 pb-16 sm:pb-24 lg:pb-32 bubbles">
       <nav class="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6" aria-label="Global">
         <div class="flex items-center flex-1">
           <div class="flex items-center justify-between w-full md:w-auto">
             <a href="#">
               <span class="sr-only">Len Woodward</span>
-              <span class="p-2 text-xl font-extrabold text-blue-100 bg-blue-600 rounded-lg">LW</span>
+              <span class="p-2 ml-3 text-xl font-extrabold text-blue-100 bg-blue-600 rounded-lg">LW</span>
             </a>
             <div class="flex items-center -mr-2 md:hidden">
-              <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" id="main-menu" aria-haspopup="true">
+              <button @click="navOpen = true" type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" id="main-menu" aria-haspopup="true">
                 <span class="sr-only">Open main menu</span>
                 <!-- Heroicon name: outline/menu -->
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -55,14 +57,14 @@
           From: "opacity-100 scale-100"
           To: "opacity-0 scale-95"
       -->
-      <div class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden">
+      <div x-show="navOpen" @click.away="navOpen = false" class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden">
         <div class="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
           <div class="flex items-center justify-between px-5 pt-4">
             <div>
               <span class="p-2 text-xl font-extrabold text-blue-100 bg-blue-600 rounded-lg">LW</span>
             </div>
             <div class="-mr-2">
-              <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <button @click="navOpen = false" type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                 <span class="sr-only">Close main menu</span>
                 <!-- Heroicon name: outline/x -->
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
