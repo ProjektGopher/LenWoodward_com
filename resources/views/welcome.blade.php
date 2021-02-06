@@ -98,26 +98,45 @@
             </p>
           </div>
           <div class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-            <x-capybara class="text-indigo-600 fill-current h-96 lg:h-96 xl:h-128" /><!-- I bought this SVG from Etsy for $4 :) -->
+            <x-capybara class="text-indigo-600 fill-current mx-auto md:ml-0 h-64 md:h-96 xl:h-128" /><!-- I bought this SVG from Etsy for $4 :) -->
           </div>
         </div>
       </main>
     </div>
   </div>
 
-  <div class="w-full pb-12 mt-32 bg-gradient-to-tr from-blue-300 to-blue-500 h-128">
+  <div class="w-full pb-24 mt-32 bg-gradient-to-tr from-blue-300 to-blue-500 h-128">
       <div class="w-8/12 mx-auto">
           <a id="who" class="sr-only">Who am I?</a>
           <img src="img/profile.png" alt="Len Woodward" class="inline h-64 -mt-32 border-8 border-gray-500 rounded-full">
-          <span class="inline-block ml-4 text-4xl font-extrabold transform -rotate-6">What's up?</span>
+          <span class="inline-block ml-4 text-4xl font-extrabold transform -rotate-3 md:-rotate-6 mt-12">What's up?</span>
           <span class="inline-block ml-4 text-4xl font-thin">My name's Len.</span>
           <span class="inline-block ml-1 text-2xl text-blue-100 opacity-75 font-extralight">(He/Him/His)</span>
           <p class="font-extralight mt-4 text-gray-900 text-lg">
             I live with my wife <a href="https://www.twitter.com/Ssshlyn" target="_blank" class="text-indigo-600">Ashlyn</a> about 40 minutes south of Vancouver, Canada, in Langley City.
             I acknowlege that where I work, live, and play, is on the unceded territory of the Matsqui, Kwantlen, and Katzie communities.
           </p>
+          <p class="font-extralight mt-4 text-gray-900 text-lg">
+            I've been working with code in one form or another since about 2003 when I was writing Visual Basic in high school.
+            I also started dabbling in some simple HTML at that time. I got my first paid programming gig in 2005.
+            It was a membership based math tutoring app, but being fresh out of school, it was not good.
+          </p>
       </div>
   </div>
+
+  <div class="w-full my-32">
+      <div class="w-8/12 mx-auto leading-loose text-lg font-extralight text-gray-900">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consequatur, nulla enim aut minima a excepturi dolor et libero? Eligendi cumque sequi a!
+          Reiciendis consectetur exercitationem labore aliquam magnam alias.
+      </div>
+  </div>
+
+  <ul>
+    <li>business - Peninsula home services</li>
+    <li>programming proficiencies - STALL stack</li>
+    <li>why Tighten</li>
+    <li>contact & github</li>
+  </ul>
 
     </body>
 </html>
