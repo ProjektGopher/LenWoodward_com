@@ -12,6 +12,19 @@
                 background-color: #ffffff;
                 background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.09'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
             }
+
+            .arrow {
+                animation: .5s alternate infinite ease-in arrowFloat;
+            }
+
+            @keyframes arrowFloat {
+                from {
+                    transform: translateY(0);
+                }
+                to {
+                    transform: translateY(.5em);
+                }
+            }
         </style>
 
         <script src="{{ asset('js/app.js') }}" defer></script>
@@ -96,9 +109,11 @@
             <p class="mt-3 text-lg font-thin text-gray-500 sm:mt-5 sm:text-xl lg:text-xl xl:text-2xl w-80">
               This is the Cool Capybara, and she'd like you to meet <span class="text-indigo-600 font-extralight">Len</span>.
             </p>
+            <x-arrow class="hidden h-16 mx-auto mt-24 md:block arrow" />
           </div>
           <div class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
             <x-capybara class="h-64 mx-auto text-indigo-600 fill-current md:ml-0 md:h-96 xl:h-128" /><!-- I bought this SVG from Etsy for $4 :) -->
+            <x-arrow class="block h-16 mx-auto mt-12 md:hidden arrow" />
           </div>
         </div>
       </main>
@@ -128,18 +143,53 @@
   </div>
 
   <div class="w-full my-32">
-      <div class="w-8/12 mx-auto text-lg leading-loose text-gray-900 font-extralight">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consequatur, nulla enim aut minima a excepturi dolor et libero? Eligendi cumque sequi a!
-          Reiciendis consectetur exercitationem labore aliquam magnam alias.
+      <div class="w-8/12 mx-auto text-lg leading-relaxed text-gray-900 md:leading-loose md:text-xl font-extralight">
+        <div class="w-full space-y-8 md:w-1/2">
+          <p class="">
+              My family has always been involved in construction, and in 2007 I left my dead-end job at the local "Source by Circuit City" (Radio Shack) to start my own renovation business.
+          </p>
+          <p class="">
+            <a href="https://penhome.ca">
+              <div class="relative inline mr-2">
+                  <div class="absolute top-0 left-0 w-full h-full transform bg-pink-200 rotate-1"></div>
+                  <span class="relative p-1 -mr-2 text-gray-800 font-md hover:underline">Peninsula Home Services</span>
+              </div>
+            </a>
+              has been my primary source of income for the last 14 years now.
+              I've done well, but with a growing family (we're due in early June) I feel it's time to hang up the owner hat and transition into an employee role.
+              I know that I don't want to be the father who's "too busy" to make it to important events, so I've decided that running my own business isn't the way to accomplish that.
+          </p>
+          <p class="">
+              Since that very first calculator program I made in VB almost 19 years ago, I've been constantly writing code to help my family run our businesses,
+              personal projects, and the occasional freelance project as
+              <a href="https://projektgopher.com">
+                <div class="relative inline mr-2">
+                    <div class="absolute top-0 left-0 w-full h-full transform bg-yellow-200 -rotate-1"></div>
+                    <span class="relative p-1 -mr-2 text-gray-800 font-md hover:underline">ProjektGopher Multimedia.</span>
+                </div>
+              </a>
+              I work exclusively in the web, and am always staying up-to-date with current trends.
+          </p>
+        </div>
+        <div>
+            
+        </div>
       </div>
   </div>
 
   <ul>
-    <li>business - Peninsula home services</li>
     <li>programming proficiencies - STALL stack</li>
     <li>why Tighten</li>
     <li>contact & github</li>
   </ul>
+
+  {{-- <div class="w-full my-32">
+      <div class="w-8/12 mx-auto text-lg leading-loose text-gray-900 font-extralight">
+          <x-devices />
+      </div>
+  </div> --}}
+
+
 
     </body>
 </html>
