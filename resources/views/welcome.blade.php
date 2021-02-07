@@ -119,7 +119,7 @@
             </div>
         </div>
 
-        <div class="relative w-full py-24 my-32 bg-gradient-to-br from-green-50 to-green-100">
+        <div class="relative w-full pt-24 my-32 bg-gradient-to-br from-green-50 to-green-100">
             <div class="absolute inset-0 circuitry"></div>
             <div class="relative">
                 <a id="what" class="sr-only">What am I good at?</a>
@@ -133,38 +133,53 @@
                     <x-logos.livewire class="object-contain w-32 h-32" />
                 </div>
 
-                <h4>But I'm also comfortable with these other technologies.</h4>
-                CSS3, Sass, JS, Vue, MySQL
-                <p>I've never worked with React, or Inertia, but I'm enthusiastic for the opportunity to have to learn them both.</p>
-                <h2 class="mx-auto my-16 text-5xl font-extrabold text-center text-purple-800">I'm reasonably comfortable almost anywhere along the tech stack</h2>
-                <p>Check out the Github repo for this site to see these skills in action:</p>
-                <ul>
-                <li>version control</li>
-                <li>CI & CD</li>
-                <li>Vapor <li>serveless deployment</li>
-                <li>Domain and DNS</li>
-                <li>Testing</li>
-                <li>Asset purge & compilation</li>
-                <li>SVG creation, manipulation, optimization, and inclusion</li>
-                <li>Design</li>
-                <li>Tailwind</li>
-                <li>Alpine</li>
-                <li>Livewire</li>
-                <li>Blade components</li>
-                <li>Guzzle to consume nexmo api</li>
-                </ul>
-                <p>Some things I'm still working on: Accessiblity, proper semantics, internationalization</p>
+                <p class="max-w-md mx-auto my-16 text-2xl font-extrabold text-center text-purple-800">
+                    STALL may be my favorite tech stack, but I'm also familiar with these other technologies
+                </p>
+
+                <div class="flex justify-center mt-8 space-x-4 md:space-x-8 md:mt-16">
+                    <x-logos.css3   class="object-contain w-32 h-32" />
+                    <x-logos.sass class="object-contain w-32 h-32" />
+                    <x-logos.javascript   class="object-contain w-32 h-32" />
+                    <x-logos.vue  class="object-contain w-32 h-32" />
+                    <x-logos.mysql  class="object-contain w-32 h-32" />
+                </div>
+                
+                <p class="max-w-md mx-auto my-16 text-xl font-extrabold text-center text-purple-800 ">
+                    I've never worked with React, or Inertia, but I'm enthusiastic for the opportunity to have to learn them both.
+                </p>
             </div>
+            <svg class="w-full h-24 mt-24" style="transform: scaleX(-1)" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1440 79.6584C1410.22 98.8649 1023.24 130.442 773.857 108.956C441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584Z" fill="white"/>
+            </svg>  
         </div>
 
+        <h2 class="mx-auto my-16 text-5xl font-extrabold text-center text-purple-800">I'm reasonably comfortable almost anywhere along the tech stack</h2>
+        <p>Check out the Github repo for this site to see these particular skills in action:</p>
         <ul>
-            <li>programming proficiencies - STALL stack</li>
+            <li>version control</li>
+            <li>CI & CD</li>
+            <li>serveless deployment with Vapor</li>
+            <li>Domain Reg and DNS</li>
+            <li>Testing - Unit, Feature, Browser</li>
+            <li>Asset purge & compilation</li>
+            <li>SVG creation, manipulation, optimization, and inclusion</li>
+            <li>Basic Design</li>
+            <li>Tailwind</li>
+            <li>Alpine</li>
+            <li>Livewire</li>
+            <li>Blade components</li>
+            <li>Guzzle to consume nexmo api</li>
+        </ul>
+        <p>Some things I'm still working on: Accessiblity, proper semantics, internationalization</p>
 
+        <ul>
             <li>why Tighten</li>
             diverse work environment
             alum
             attention to family and mental health
             encouragement to work on open source
+            community, conferences, workplace pride
 
             <li>contact & github</li>
             phone
