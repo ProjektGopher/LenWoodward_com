@@ -22,7 +22,9 @@
         <div class="hidden md:block md:ml-10 md:space-x-10">
             <a href="#who" class="font-medium text-gray-500 hover:text-gray-900">Who am I?</a>
             <a href="#what" class="font-medium text-gray-500 hover:text-gray-900">What am I good at?</a>
+            <a href="#why" class="font-medium text-gray-500 hover:text-gray-900">Why Tighten?</a>
             <a href="#how" class="font-medium text-gray-500 hover:text-gray-900">How to reach me</a>
+            <a href="https://github.com/ProjektGopher/coolcapybara" class="font-medium text-gray-500 hover:text-gray-900">This Repo</a>
         </div>
     </div>
 </nav>
@@ -65,9 +67,15 @@
                 <a href="#what"
                     class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                     role="menuitem">What am I good at?</a>
+                <a href="#why"
+                    class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                    role="menuitem">Why Tighten?</a>
                 <a href="#how"
                     class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                     role="menuitem">How to reach me</a>
+                <a href="https://github.com/ProjektGopher/coolcapybara"
+                    class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                    role="menuitem">This Repo</a>
             </div>
         </div>
     </div>
