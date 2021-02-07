@@ -125,7 +125,7 @@
                 <a id="what" class="sr-only">What am I good at?</a>
                 <x-svg.speech-bubbles class="w-4/5 mx-auto md:max-w-2xl" />
                 
-                <div id="STALLlogos" class="flex justify-center mt-8 space-x-4 md:space-x-8 md:mt-16">
+                <div id="STALLlogos" class="flex justify-center mx-4 mt-8 space-x-4 md:space-x-8 md:mt-16">
                     <x-logos.spruce   class="object-contain w-32 h-32" />
                     <x-logos.tailwind class="object-contain w-32 h-32" />
                     <x-logos.alpine   class="object-contain w-32 h-32" />
@@ -133,11 +133,11 @@
                     <x-logos.livewire class="object-contain w-32 h-32" />
                 </div>
 
-                <p class="max-w-md mx-auto my-16 text-2xl font-extrabold text-center text-purple-800">
-                    STALL may be my favorite tech stack, but I'm also familiar with these other technologies
+                <p class="max-w-md mx-8 my-8 text-xl font-extrabold text-center text-purple-800 md:my-16 md:text-2xl md:mx-auto">
+                    STALL may be my <span class="italic">favorite</span> tech stack, but I'm also familiar with these other technologies
                 </p>
 
-                <div class="flex justify-center mt-8 space-x-4 md:space-x-8 md:mt-16">
+                <div class="flex justify-center mx-4 mt-8 space-x-4 md:space-x-8 md:mt-16">
                     <x-logos.css3   class="object-contain w-32 h-32" />
                     <x-logos.sass class="object-contain w-32 h-32" />
                     <x-logos.javascript   class="object-contain w-32 h-32" />
@@ -145,7 +145,7 @@
                     <x-logos.mysql  class="object-contain w-32 h-32" />
                 </div>
                 
-                <p class="max-w-md mx-auto my-16 text-xl font-extrabold text-center text-purple-800 ">
+                <p class="max-w-md mx-8 my-8 text-lg font-extrabold text-center text-purple-800 md:my-16 md:text-xl md:mx-auto ">
                     I've never worked with React, or Inertia, but I'm enthusiastic for the opportunity to have to learn them both.
                 </p>
             </div>
@@ -154,7 +154,6 @@
             </svg>  
         </div>
 
-        <h2 class="mx-auto my-16 text-5xl font-extrabold text-center text-purple-800">I'm reasonably comfortable almost anywhere along the tech stack</h2>
         <p>Check out the Github repo for this site to see these particular skills in action:</p>
         <ul>
             <li>version control</li>
@@ -164,15 +163,15 @@
             <li>Testing - Unit, Feature, Browser</li>
             <li>Asset purge & compilation</li>
             <li>SVG creation, manipulation, optimization, and inclusion</li>
-            <li>Basic Design</li>
+            <li>Basic Responsive Design</li>
             <li>Tailwind</li>
             <li>Alpine</li>
             <li>Livewire</li>
             <li>Blade components</li>
             <li>Guzzle to consume nexmo api</li>
         </ul>
-        <p>Some things I'm still working on: Accessiblity, proper semantics, internationalization</p>
 
+        <a id="why" class="sr-only">Why Tighten?</a>
         <ul>
             <li>why Tighten</li>
             diverse work environment
@@ -188,12 +187,6 @@
             twitter
             github
         </ul>
-
-        {{-- <div class="w-full my-32">
-            <div class="w-8/12 mx-auto text-lg leading-loose text-gray-900 font-extralight">
-                <x-svg.devices />
-            </div>
-        </div> --}}
 
     </body>
 </html>
