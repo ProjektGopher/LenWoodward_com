@@ -156,7 +156,7 @@
 
         <div class="px-4 mx-auto my-24 max-w-7xl sm:px-6 lg:my-32">
             <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-                <div class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-4">
+                <div class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-auto xl:mx-0 lg:col-span-4">
                     <a href="https://github.com/ProjektGopher/coolcapybara">
                         <x-logos.github class="object-contain mx-auto mb-4 text-pink-300 transition-all transform fill-current hover:text-purple-300 hover:scale-110 w-72 h-72" />
                         <span class="inline-block text-gray-500 transition-all transform text-md font-extralight hover:-rotate-1 hover:scale-110">https://github.com/ProjektGopher/coolcapybara</span>
@@ -167,11 +167,11 @@
                     <ul class="mt-8 leading-loose font-extralight font-lg md:mt-0">
                         <li>Familiarity with version control</li>
                         <li>CI & CD with Github Actions</li>
-                        <li>Serveless deployment with Laravel Vapor</li>
                         <li>Domain registration and DNS</li>
+                        <li>Serveless deployment with Laravel Vapor</li>
                         <li>Unit, feature, and browser testing</li>
+                        <li>SVG creation & manipulation</li>
                         <li>Asset purge & compilation</li>
-                        <li>SVG creation, manipulation, and optimization</li>
                         <li>Basic Responsive Design</li>
                         <li>Tailwind</li>
                         <li>Alpine</li>
