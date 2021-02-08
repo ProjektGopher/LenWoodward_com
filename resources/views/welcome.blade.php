@@ -168,7 +168,7 @@
                         <li>Familiarity with version control</li>
                         <li>CI & CD with Github Actions</li>
                         <li>Serveless deployment with Laravel Vapor</li>
-                        <li>Domain Reg and DNS</li>
+                        <li>Domain registration and DNS</li>
                         <li>Unit, feature, and browser testing</li>
                         <li>Asset purge & compilation</li>
                         <li>SVG creation, manipulation, and optimization</li>
@@ -183,22 +183,28 @@
             </div>
         </div>
 
-        <a id="why" class="sr-only">Why Tighten?</a>
-        <ul>
-            <li>why Tighten</li>
-            diverse work environment
-            alum
-            attention to family and mental health
-            encouragement to work on open source
-            community, conferences, workplace pride
+        <div class="bg-blue-200">
+            <svg class="w-full h-24 mt-24 transform rotate-180" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1440 79.6584C1410.22 98.8649 1023.24 130.442 773.857 108.956C441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584Z" fill="white"/>
+            </svg>  
+            <a id="why" class="sr-only">Why Tighten?</a>
+            <ul>
+                <li>why Tighten</li>
+                diverse work environment
+                alum
+                attention to family and mental health
+                encouragement to work on open source
+                community, conferences, workplace pride
+    
+                <li>contact & github</li>
+                phone
+                - send text with nexmo api
+                email
+                twitter
+                github
+            </ul>
+        </div>
 
-            <li>contact & github</li>
-            phone
-            - send text with nexmo api
-            email
-            twitter
-            github
-        </ul>
 
     </body>
 </html>
