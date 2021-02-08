@@ -165,9 +165,9 @@
                 </div>
                 <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-8 lg:text-left">
                     <ul class="mt-8 text-lg leading-loose font-extralight md:mt-0">
-                        <li>Familiarity with version control</li>
                         <li>CI & CD with Github Actions</li>
                         <li>Domain registration and DNS</li>
+                        <li>Familiarity with version control</li>
                         <li>Serveless deployment with Laravel Vapor</li>
                         <li>Unit, feature, and browser testing</li>
                         <li>SVG creation & manipulation</li>
@@ -183,7 +183,7 @@
             </div>
         </div>
 
-        <div class="pb-48 mb-24 text-center text-gray-700 bg-yellow-500 md:pb-72">
+        <div class="pb-48 mb-24 text-center text-gray-700 md:pb-72" style="background-color: #ffaa30;">
             <svg class="w-full h-24 mt-24 mb-48 transform rotate-180 md:mb-72" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1440 79.6584C1410.22 98.8649 1023.24 130.442 773.857 108.956C441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584Z" fill="white"/>
             </svg>  
@@ -225,15 +225,19 @@
                 </svg>
                 <span class="text-6xl font-extrabold md:text-7xl lg:text-9xl">?</span>
             </span>
-            <p class="mx-auto text-lg leading-loose font-extralight">
-                diverse work environment
-                alum
-                attention to family and mental health
-                encouragement to work on open source
-                community, conferences, workplace pride
-            </p>  
+            <p class="w-4/5 max-w-6xl mx-auto text-lg leading-relaxed md:leading-loose font-extralight">
+                In the Laravel community, the two most respected dev houses are Spatie, and Tighten. And for good reason.
+                Your encouragement to contribute to and support open source work.
+                Your dedication to work-life balance, as well as family and mental health.
+                How you hold yourselves accountable for maintaining diversity in the workplace.
+                Your respect of other cultures, and just general social responsibility.
+                Thighten has had some of the most impressive alumni, like Adam, Caleb, and Samantha.
+                I love the sense of community that radiates outward in every direction from your company.
+                I would be exceedingly proud to say to someone at a conference I'm attending: "I work at Tighten."
+            </p>
         </div>
         
+        <a name="how" class="sr-only">How to reach me</a>
         <ul>
             <li>contact & github</li>
             phone
