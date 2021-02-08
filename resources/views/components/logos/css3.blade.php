@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" {{ $attributes }} viewBox="0 0 538.584 538.583">
+    <title>CSS3 Logo</title>
     <path d="M0 0h538.584v538.583H0V0z" fill="none" />
     <path d="M405.5 467.454L269.29 504.13l-136.212-36.676-31.432-340.525h335.29L405.5 467.454z" fill="#2062af" />
     <path d="M269.289 154.511v320.367l.308.084 110.229-29.682 25.443-290.769h-135.98z" fill="#3c9cd7" />

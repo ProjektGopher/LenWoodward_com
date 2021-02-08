@@ -133,7 +133,7 @@
                     <x-logos.livewire class="object-contain w-32 h-32" />
                 </div>
 
-                <p class="max-w-md mx-8 my-8 text-xl font-extrabold text-center text-purple-800 md:my-16 md:text-2xl md:mx-auto">
+                <p class="max-w-md mx-8 my-8 text-xl text-center text-purple-800 font-extralight md:my-16 md:text-2xl md:mx-auto">
                     STALL may be my <span class="italic">favorite</span> tech stack, but I'm also familiar with these other technologies
                 </p>
 
@@ -145,7 +145,7 @@
                     <x-logos.mysql  class="object-contain w-32 h-32" />
                 </div>
                 
-                <p class="max-w-md mx-8 my-8 text-lg font-extrabold text-center text-purple-800 md:my-16 md:text-xl md:mx-auto ">
+                <p class="max-w-md mx-8 my-8 text-lg text-center text-purple-800 font-extralight md:my-16 md:text-xl md:mx-auto ">
                     I've never worked with React, or Inertia, but I'm enthusiastic for the opportunity to have to learn them both.
                 </p>
             </div>
@@ -154,39 +154,57 @@
             </svg>  
         </div>
 
-        <p>Check out the Github repo for this site to see these particular skills in action:</p>
-        <ul>
-            <li>version control</li>
-            <li>CI & CD</li>
-            <li>serveless deployment with Vapor</li>
-            <li>Domain Reg and DNS</li>
-            <li>Testing - Unit, Feature, Browser</li>
-            <li>Asset purge & compilation</li>
-            <li>SVG creation, manipulation, optimization, and inclusion</li>
-            <li>Basic Responsive Design</li>
-            <li>Tailwind</li>
-            <li>Alpine</li>
-            <li>Livewire</li>
-            <li>Blade components</li>
-            <li>Guzzle to consume nexmo api</li>
-        </ul>
+        <div class="px-4 mx-auto my-24 max-w-7xl sm:px-6 lg:my-32">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-auto xl:mx-0 lg:col-span-4">
+                    <a href="https://github.com/ProjektGopher/coolcapybara">
+                        <x-logos.github class="object-contain mx-auto mb-4 text-pink-300 transition-all transform fill-current hover:text-purple-300 hover:scale-110 w-72 h-72" />
+                        <span class="inline-block text-gray-500 transition-all transform text-md font-extralight hover:-rotate-1 hover:scale-110">https://github.com/ProjektGopher/coolcapybara</span>
+                    </a>
+                    <p class="mt-6 text-xl text-gray-800 font-extralight">Check out the Github repo for this site to see these particular skills in action</p>
+                </div>
+                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-8 lg:text-left">
+                    <ul class="mt-8 leading-loose font-extralight font-lg md:mt-0">
+                        <li>Familiarity with version control</li>
+                        <li>CI & CD with Github Actions</li>
+                        <li>Domain registration and DNS</li>
+                        <li>Serveless deployment with Laravel Vapor</li>
+                        <li>Unit, feature, and browser testing</li>
+                        <li>SVG creation & manipulation</li>
+                        <li>Asset purge & compilation</li>
+                        <li>Basic Responsive Design</li>
+                        <li>Tailwind</li>
+                        <li>Alpine</li>
+                        <li>Livewire</li>
+                        <li>Blade components</li>
+                        <li>Guzzle to consume nexmo api</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-        <a id="why" class="sr-only">Why Tighten?</a>
-        <ul>
-            <li>why Tighten</li>
-            diverse work environment
-            alum
-            attention to family and mental health
-            encouragement to work on open source
-            community, conferences, workplace pride
+        <div class="bg-blue-200">
+            <svg class="w-full h-24 mt-24 transform rotate-180" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1440 79.6584C1410.22 98.8649 1023.24 130.442 773.857 108.956C441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584Z" fill="white"/>
+            </svg>  
+            <a id="why" class="sr-only">Why Tighten?</a>
+            <ul>
+                <li>why Tighten</li>
+                diverse work environment
+                alum
+                attention to family and mental health
+                encouragement to work on open source
+                community, conferences, workplace pride
+    
+                <li>contact & github</li>
+                phone
+                - send text with nexmo api
+                email
+                twitter
+                github
+            </ul>
+        </div>
 
-            <li>contact & github</li>
-            phone
-            - send text with nexmo api
-            email
-            twitter
-            github
-        </ul>
 
     </body>
 </html>
