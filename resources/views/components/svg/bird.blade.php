@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <svg
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns="http://www.w3.org/2000/svg"
@@ -44,10 +43,8 @@
               id="path3041"
               d="m28 1049.4-2 1"
           />
-        </g
-        >
-      </g
-      >
+        </g>
+      </g>
       <path
           id="path2915"
           fill="#f95"
@@ -103,105 +100,6 @@
           fill="#f60"
           d="m54 1002.4c2.803 0.1097 9.8454 0.5932 9.8454 4.5932-3.845 0.4-4.845 0.4-7.845 1.4 0 0 5.7696-0.7489 7-1-0.2715 2.5733-4.2697 5.1009-6.8407 5.9232-0.54615-1.971-2.4399-5.6481-2.1593-10.923l-0.000001-0.0004z"
       />
-    </g
-    >
-  </g
-  >
-  <metadata
-    >
-    <rdf:RDF
-      >
-      <cc:Work
-        >
-        <dc:format
-          >image/svg+xml</dc:format
-        >
-        <dc:type
-            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
-        />
-        <cc:license
-            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
-        />
-        <dc:publisher
-          >
-          <cc:Agent
-              rdf:about="http://openclipart.org/"
-            >
-            <dc:title
-              >Openclipart</dc:title
-            >
-          </cc:Agent
-          >
-        </dc:publisher
-        >
-        <dc:title
-          >birdie</dc:title
-        >
-        <dc:date
-          >2013-11-21T05:53:18</dc:date
-        >
-        <dc:description
-          >green birdie</dc:description
-        >
-        <dc:source
-          >https://openclipart.org/detail/188961/birdie-by-crisg-188961</dc:source
-        >
-        <dc:creator
-          >
-          <cc:Agent
-            >
-            <dc:title
-              >crisg</dc:title
-            >
-          </cc:Agent
-          >
-        </dc:creator
-        >
-        <dc:subject
-          >
-          <rdf:Bag
-            >
-            <rdf:li
-              >birdie</rdf:li
-            >
-            <rdf:li
-              >birds</rdf:li
-            >
-            <rdf:li
-              >cartoon</rdf:li
-            >
-            <rdf:li
-              >flat colors</rdf:li
-            >
-            <rdf:li
-              >icon</rdf:li
-            >
-            <rdf:li
-              >little bird</rdf:li
-            >
-          </rdf:Bag
-          >
-        </dc:subject
-        >
-      </cc:Work
-      >
-      <cc:License
-          rdf:about="http://creativecommons.org/licenses/publicdomain/"
-        >
-        <cc:permits
-            rdf:resource="http://creativecommons.org/ns#Reproduction"
-        />
-        <cc:permits
-            rdf:resource="http://creativecommons.org/ns#Distribution"
-        />
-        <cc:permits
-            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
-        />
-      </cc:License
-      >
-    </rdf:RDF
-    >
-  </metadata
-  >
-</svg
->
+    </g>
+  </g>
+</svg>
