@@ -29,6 +29,11 @@ class SendText extends Component
         $message = "Hi Len, this is $this->name from $this->company, and $this->message";
         Notification::route('nexmo', '16049922418')
             ->notify(new MessageReceived($message));
+        
+        $this->name = '';
+        $this->company = '';
+        $this->message = '';
+        $this->from = '';
     }
 
     public function render()
