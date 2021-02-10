@@ -166,7 +166,6 @@
                 <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-8 lg:text-left">
                     <ul class="mt-8 text-lg leading-loose font-extralight md:mt-0">
                         <li>CI & CD with Github Actions</li>
-                        <li>Domain registration and DNS</li>
                         <li>Familiarity with version control</li>
                         <li>Serveless deployment with Laravel Vapor</li>
                         <li>Unit, feature, and browser testing</li>
@@ -238,14 +237,11 @@
         </div>
         
         <a name="how" class="sr-only">How to reach me</a>
-        <ul>
-            <li>contact & github</li>
             phone
             - send text with nexmo api
             email
             twitter
             github
-        </ul>
 
     </body>
 </html>
