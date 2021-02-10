@@ -242,6 +242,6 @@
             email
             twitter
             github
-
+        <livewire:send-text />
     </body>
 </html>
