@@ -34,6 +34,8 @@
         @livewireStyles
 
         <script src="{{ asset('js/app.js') }}" defer></script>
+
+        <x-open-graph />
     </head>
     <body class="antialiased">
 
