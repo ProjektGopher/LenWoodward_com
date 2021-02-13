@@ -178,7 +178,7 @@
                         <li>Alpine</li>
                         <li>Livewire</li>
                         <li>Blade components</li>
-                        <li>Guzzle to consume nexmo api</li>
+                        <li>3rd party API consumption</li>
                     </ul>
                 </div>
             </div>
