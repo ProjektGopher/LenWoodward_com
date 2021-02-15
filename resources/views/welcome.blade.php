@@ -95,7 +95,7 @@
                     My family has always been involved in construction, and in 2007 I left my dead-end job at the local "Source by Circuit City" (Radio Shack) to start my own renovation business.
                 </p>
                 <p class="">
-                    <a href="https://penhome.ca">
+                    <a href="https://staging.penhome.ca">
                     <div class="relative inline mr-2">
                         <div class="absolute top-0 left-0 w-full h-full transform bg-pink-200 rotate-1"></div>
                         <span class="relative p-1 -mr-2 text-gray-800 font-md hover:underline">Peninsula Home Services</span>
