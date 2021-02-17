@@ -234,7 +234,7 @@
                 Your dedication to work-life balance, as well as family and mental health.
                 How you hold yourselves accountable for maintaining diversity in the workplace.
                 Your respect of other cultures, and just general social responsibility.
-                Thighten has had some of the most impressive alumni, like Adam, Caleb, and Samantha.
+                Tighten has had some of the most impressive alumni, like Adam, Caleb, and Samantha.
                 I love the sense of community that radiates outward in every direction from your company.
                 I would be exceedingly proud to say to someone at a conference I'm attending: "I work at Tighten."
             </p>
