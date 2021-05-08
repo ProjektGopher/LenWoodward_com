@@ -40,7 +40,7 @@
         <div class="relative overflow-hidden bg-white">
             <div x-data="{ navOpen: false }" class="relative pt-6 pb-16 sm:pb-24 lg:pb-32 bubbles">
             <x-nav />
-            <main class="px-4 mx-auto mt-16 max-w-7xl sm:mt-24 sm:px-6 lg:mt-32">
+            {{-- <main class="px-4 mx-auto mt-16 max-w-7xl sm:mt-24 sm:px-6 lg:mt-32">
                 <div class="lg:grid lg:grid-cols-12 lg:gap-8">
                 <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
                     <h1>
@@ -60,14 +60,14 @@
                     <x-svg.arrow class="block h-16 mx-auto mt-12 md:hidden arrow" />
                 </div>
                 </div>
-            </main>
+            </main> --}}
             </div>
         </div>
 
         <div class="w-full mt-32 bg-gradient-to-tr from-blue-300 to-blue-500 h-128">
             <div class="w-8/12 mx-auto">
                 <a id="who" class="sr-only">Who am I?</a>
-                <img src="{{ asset('img/profile.png') }}" alt="Len Woodward" class="inline h-64 -mt-32 border-8 border-gray-500 rounded-full">
+                <img src="{{ asset('img/profile.jpg') }}" alt="Len Woodward" class="inline h-64 -mt-32 border-8 border-gray-500 rounded-full">
                 <span class="inline-block mt-12 ml-4 text-4xl font-extrabold transform -rotate-3 md:-rotate-6">What's up?</span>
                 <span class="inline-block ml-4 text-4xl font-thin">My name's Len.</span>
                 <span class="inline-block ml-1 text-2xl text-blue-100 opacity-75 font-extralight">(He/Him/His)</span>
@@ -159,9 +159,9 @@
         <div class="px-4 mx-auto my-24 max-w-7xl sm:px-6 lg:my-32">
             <div class="lg:grid lg:grid-cols-12 lg:gap-8">
                 <div class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-auto xl:mx-0 lg:col-span-4">
-                    <a href="https://github.com/ProjektGopher/coolcapybara">
+                    <a href="https://github.com/ProjektGopher/LenWoodward_com">
                         <x-logos.github class="object-contain mx-auto mb-4 text-pink-300 transition-all transform fill-current hover:text-purple-300 hover:scale-110 w-72 h-72" />
-                        <span class="inline-block text-gray-500 transition-all transform text-md font-extralight hover:-rotate-1 hover:scale-110">https://github.com/ProjektGopher/coolcapybara</span>
+                        <span class="inline-block text-gray-500 transition-all transform text-md font-extralight hover:-rotate-1 hover:scale-110">https://github.com/ProjektGopher/LenWoodward_com</span>
                     </a>
                     <p class="mt-6 text-xl text-gray-800 font-extralight">Check out the Github repo for this site to see these particular skills in action</p>
                 </div>
@@ -184,11 +184,11 @@
             </div>
         </div>
 
-        <div class="pb-48 text-center text-gray-700 md:pb-72" style="background-color: #ffaa30;">
+        {{-- <div class="pb-48 text-center text-gray-700 md:pb-72" style="background-color: #ffaa30;">
             <svg class="w-full h-24 mt-24 mb-48 transform rotate-180 md:mb-72" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1440 79.6584C1410.22 98.8649 1023.24 130.442 773.857 108.956C441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584Z" fill="white"/>
             </svg>  
-            {{-- tighten yellow #ffaa30 --}}
+            {{ -- tighten yellow #ffaa30 -- }}
             <a id="why" class="sr-only">Why Tighten?</a>
             <span class="inline-block mx-auto mb-24 md:tracking-widest">
                 <span class="text-6xl font-extrabold md:text-7xl lg:text-9xl">So why</span>
@@ -236,7 +236,7 @@
                 I love the sense of community that radiates outward in every direction from your company.
                 I would be exceedingly proud to say to someone at a conference I'm attending: "I work at Tighten."
             </p>
-        </div>
+        </div> --}}
 
         <a name="how" class="sr-only">How to reach me</a>
         <div class="relative bg-white">
@@ -271,30 +271,7 @@
             </div>
             <div class="px-4 py-16 bg-white sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
                 <div class="max-w-lg mx-auto lg:max-w-none">
-                {{-- <form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
-                    <div>
-                    <label for="full_name" class="sr-only">Full name</label>
-                    <input type="text" name="full_name" id="full_name" autocomplete="name" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Full name">
-                    </div>
-                    <div>
-                    <label for="email" class="sr-only">Email</label>
-                    <input id="email" name="email" type="email" autocomplete="email" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Email">
-                    </div>
-                    <div>
-                    <label for="phone" class="sr-only">Phone</label>
-                    <input type="text" name="phone" id="phone" autocomplete="tel" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Phone">
-                    </div>
-                    <div>
-                    <label for="message" class="sr-only">Message</label>
-                    <textarea id="message" name="message" rows="4" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Message"></textarea>
-                    </div>
-                    <div>
-                    <button type="submit" class="inline-flex justify-center px-6 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                        Submit
-                    </button>
-                    </div>
-                </form> --}}
-                <livewire:send-text />
+                    {{-- <livewire:send-text /> --}}
                 </div>
             </div>
             </div>
