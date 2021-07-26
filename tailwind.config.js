@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: [
     './resources/**/*.blade.php',
@@ -5,7 +7,13 @@ module.exports = {
     './resources/**/*.vue',],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+      extend: {
+        colors: {
+            teal: colors.teal,
+            lime: colors.lime,
+            'cool-gray': colors.coolGray,
+        },
+    },
   },
   variants: {
     extend: {},
