@@ -6,12 +6,18 @@
         <link rel="stylesheet" href="https://use.typekit.net/ngm6ajt.css">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-        <title>Len Woodward{{-- | Tighten Application --}}</title>
+        <title>Len Woodward</title>
 
         <meta name="theme-color" content="#111827">
         {{-- <meta name="theme-color" media="(prefers-color-scheme: light)" content="white"> --}}
         {{-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black"> --}}
         <link rel="shortcut icon" href="{{ asset('img/icon.png')}}" type="image/png" />
+        <meta property="og:image" content="{{ asset('img/OpenGraph-1200x630.jpg')}}" />
+        <meta property="og:image:secure_url" content="{{ asset('img/OpenGraph-1200x630.jpg')}}" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Len Woodward - TALL stack developer - Available for Contract" />
 
         <style>
             .monotalic {
