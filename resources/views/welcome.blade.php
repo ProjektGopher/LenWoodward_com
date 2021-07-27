@@ -12,6 +12,12 @@
         {{-- <meta name="theme-color" media="(prefers-color-scheme: light)" content="white"> --}}
         {{-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black"> --}}
         <link rel="shortcut icon" href="{{ asset('img/icon.png')}}" type="image/png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@ProjektGopher" />
+        <meta name="twitter:creator" content="@ProjektGopher" />
+        <meta property="og:url" content="{{ route('home') }}" />
+        <meta property="og:title" content="Len Woodward" />
+        <meta property="og:description" content="TALL stack web developer - Available for Contract" />
         <meta property="og:image" content="{{ asset('img/OpenGraph-1200x630.jpg')}}" />
         <meta property="og:image:secure_url" content="{{ asset('img/OpenGraph-1200x630.jpg')}}" />
         <meta property="og:image:type" content="image/jpeg" />
