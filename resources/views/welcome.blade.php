@@ -35,7 +35,7 @@
 
             <span class="inline-block p-2 mt-4 ml-3 text-xl font-extrabold text-white rounded-lg stacked-linear">LW</span>
 
-            <p class="absolute top-0 right-0 px-2 py-1 m-4 text-sm font-bold text-black uppercase rounded-lg bg-lime-500 monotalic">Availble for Contract</p>
+            <p class="absolute top-0 right-0 px-2 py-1 m-4 text-sm font-bold uppercase rounded-lg text-cool-gray-900 bg-lime-500 monotalic">Availble for Contract</p>
 
             <div class="py-8">
                 <p class="p-2 text-white monotalic">
@@ -59,7 +59,7 @@
                 <p class="p-2 text-white monotalic">
                     $ cat resources/js/LenWoodward.vue
                 </p>
-                <pre class="pl-4 monotalic"><code class="" styles="background-color: inherit;">&lt;template&gt;
+                <pre class="pl-4 monotalic"><code class="">&lt;template&gt;
   &lt;p&gt;
     What's up? I'm @{{ firstName }}
     (@{{ pronouns }}),
@@ -79,47 +79,22 @@
       };
     }
   };
-&lt;/script&gt;
-
-&lt;style scoped&gt;
-    p {
-        font-size: 2em;
-        text-align: center;
-    }
-&lt;/style&gt;</code></pre>
+&lt;/script&gt;</code></pre>
             </div>
 
             <a name="how" class="sr-only">How to reach me</a>
-            <div class="">
+            <div class="pb-12">
                 <p class="p-2 text-white monotalic">
                     $ php artisan contact:details
                 </p>
-                <table class="ml-6 text-lime-300">
-                    <tr>
-                        <td>[<x-svg.phone class="inline object-contain w-5 h-5 mr-1" />]</td>
-                        <td>
-                            <span class="">1.604.992.2418</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>[<x-svg.envelope class="inline object-contain w-5 h-5 mr-1" />]</td>
-                        <td>
-                            <span class="">Len at ProjektGopher dot com</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>[<x-svg.bird class="inline object-contain w-5 h-5 mr-1" />]</td>
-                        <td>
-                            <span class="">@ProjektGopher</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>[<x-logos.github class="inline object-contain w-5 h-5 mr-1 text-purple-400" />]</td>
-                        <td>
-                            <span class="">ProjektGopher</span>
-                        </td>
-                    </tr>
-                </table>
+                <pre class="pl-8 overflow-x-scroll text-orange-300 monotalic"><span class="text-blue-300">App\Models\User</span>^ {<span class="text-gray-300">#3510</span>
+  #<span class="text-gray-300">attributes</span>: <span class="text-blue-300">array:4</span> [
+    "<span class="text-lime-600">tel</span>" => "<span class="font-mono text-lime-300">1.604.992.2418</span>"
+    "<span class="text-lime-600">email</span>" => "<span class="font-mono text-lime-300">Len at ProjektGopher dot com</span>"
+    "<span class="text-lime-600">twitter</span>" => "<span class="font-mono text-lime-300">@ProjektGopher</span>"
+    "<span class="text-lime-600">github</span>" => "<span class="font-mono text-lime-300">ProjektGopher</span>"
+  ]
+}</pre>
             </div>
 
         </div>
