@@ -79,13 +79,13 @@
                         <span class="relative p-1 -mr-2 text-gray-800 font-md hover:underline">Peninsula Home Services</span>
                     </div>
                     </a>
-                    has been my primary source of income for the last 14 years now.
-                    I've done well, but with a growing family (we're due in early June) I feel it's time to hang up the owner hat and transition into an employee role.
-                    I know that I don't want to be the father who's "too busy" to make it to important events, so I've decided that running my own business isn't the way to accomplish that.
+                    has been my primary source of income for the last 15 years now.
+                    I've done well, but with a growing family (we welcomed baby Allison to our family in early June) I felt that it was time to shut down the construction business, and focus exclusively on writing code.
+                    I know that I don't want to be the father who's "too busy" to make it to important events, so I've decided that working away from home isn't the way to accomplish that.
                 </p>
                 <p class="">
-                    Since that very first calculator program I wrote in VB almost 19 years ago, I've been constantly writing code to help my family run our businesses,
-                    for personal projects, and for the occasional freelance project as
+                    Since that very first calculator program I wrote in VB over 19 years ago, I've been constantly writing code to help my family run our businesses,
+                    for personal projects, and for freelance projects as
                     <a href="https://projektgopher.com">
                         <div class="relative inline mr-2">
                             <div class="absolute top-0 left-0 w-full h-full transform bg-yellow-200 -rotate-1"></div>
