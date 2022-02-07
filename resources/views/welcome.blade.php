@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-        <title>Len Woodward | Tighten Application</title>
+        <title>Len Woodward{{-- | Tighten Application --}}</title>
 
         <style>
             .bubbles {
@@ -40,36 +40,16 @@
     <body class="antialiased">
 
         <div class="relative overflow-hidden bg-white">
-            <div x-data="{ navOpen: false }" class="relative pt-6 pb-16 sm:pb-24 lg:pb-32 bubbles">
+            <div x-data="{ navOpen: false }" class="relative pt-6 pb-48 sm:pb-56 lg:pb-64 bubbles">
             <x-nav />
-            <main class="px-4 mx-auto mt-16 max-w-7xl sm:mt-24 sm:px-6 lg:mt-32">
-                <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-                    <h1>
-                    <span class="block mt-1 text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl">
-                        <span class="block text-gray-900">Hey there,</span>
-                        <span class="block text-indigo-600">Tighten</span>
-                        <span class="block text-gray-900">folks!</span>
-                    </span>
-                    </h1>
-                    <p class="mt-3 text-lg font-thin text-gray-500 sm:mt-5 sm:text-xl lg:text-xl xl:text-2xl w-80">
-                    This is the Cool Capybara, and she'd like you to meet <span class="text-indigo-600 font-extralight">Len</span>.
-                    </p>
-                    <x-svg.arrow class="hidden h-16 mx-auto mt-24 md:block arrow" />
-                </div>
-                <div class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-                    <x-svg.capybara class="h-64 mx-auto text-indigo-600 fill-current md:ml-0 md:h-96 xl:h-128" /><!-- I bought this SVG from Etsy for $4 :) -->
-                    <x-svg.arrow class="block h-16 mx-auto mt-12 md:hidden arrow" />
-                </div>
-                </div>
-            </main>
+            {{-- <x-tighten.hey /> --}}
             </div>
         </div>
 
-        <div class="w-full mt-32 bg-gradient-to-tr from-blue-300 to-blue-500 h-128">
-            <div class="w-8/12 mx-auto">
+        <div class="w-full bg-gradient-to-tr from-blue-300 to-blue-500 h-128">
+            <div class="relative w-8/12 mx-auto">
                 <a id="who" class="sr-only">Who am I?</a>
-                <img src="{{ asset('img/profile.png') }}" alt="Len Woodward" class="inline h-64 -mt-32 border-8 border-gray-500 rounded-full">
+                <img src="{{ asset('img/profile.jpg') }}" alt="Len Woodward" class="inline h-64 -mt-32 border-8 border-gray-500 rounded-full">
                 <span class="inline-block mt-12 ml-4 text-4xl font-extrabold transform -rotate-3 md:-rotate-6">What's up?</span>
                 <span class="inline-block ml-4 text-4xl font-thin">My name's Len.</span>
                 <span class="inline-block ml-1 text-2xl text-blue-100 opacity-75 font-extralight">(He/Him/His)</span>
@@ -90,7 +70,7 @@
 
         <div class="w-full my-32">
             <div class="w-4/5 mx-auto text-lg leading-relaxed text-gray-900 md:w-8/12 md:leading-loose md:text-xl font-extralight">
-                <div class="w-full space-y-8 md:w-1/2">
+                <div class="w-full space-y-8 lg:w-1/2">
                 <p class="">
                     My family has always been involved in construction, and in 2007 I left my dead-end job at the local "Source by Circuit City" (Radio Shack) to start my own renovation business.
                 </p>
@@ -101,13 +81,13 @@
                         <span class="relative p-1 -mr-2 text-gray-800 font-md hover:underline">Peninsula Home Services</span>
                     </div>
                     </a>
-                    has been my primary source of income for the last 14 years now.
-                    I've done well, but with a growing family (we're due in early June) I feel it's time to hang up the owner hat and transition into an employee role.
-                    I know that I don't want to be the father who's "too busy" to make it to important events, so I've decided that running my own business isn't the way to accomplish that.
+                    has been my primary source of income for the last 15 years now.
+                    I've done well, but with a growing family (we welcomed baby Allison to our family in early June) I felt that it was time to shut down the construction business, and focus exclusively on writing code.
+                    I know that I don't want to be the father who's "too busy" to make it to important events, so I've decided that working away from home isn't the way to accomplish that.
                 </p>
                 <p class="">
-                    Since that very first calculator program I wrote in VB almost 19 years ago, I've been constantly writing code to help my family run our businesses,
-                    for personal projects, and for the occasional freelance project as
+                    Since that very first calculator program I wrote in VB over 19 years ago, I've been constantly writing code to help my family run our businesses,
+                    for personal projects, and for freelance projects as
                     <a href="https://projektgopher.com">
                         <div class="relative inline mr-2">
                             <div class="absolute top-0 left-0 w-full h-full transform bg-yellow-200 -rotate-1"></div>
@@ -130,7 +110,7 @@
                 <x-svg.speech-bubbles class="w-4/5 mx-auto md:max-w-2xl" />
                 
                 <div id="STALLlogos" class="flex justify-center mx-4 mt-8 space-x-4 md:space-x-8 md:mt-16">
-                    <x-logos.spruce   class="object-contain w-32 h-32" />
+                    <x-logos.vue      class="object-contain w-32 h-32 mt-10 md:mt-0" />
                     <x-logos.tailwind class="object-contain w-32 h-32" />
                     <x-logos.alpine   class="object-contain w-32 h-32" />
                     <x-logos.laravel  class="object-contain w-32 h-32" />
@@ -138,19 +118,19 @@
                 </div>
 
                 <p class="max-w-md mx-8 my-8 text-xl text-center text-purple-800 font-extralight md:my-16 md:text-2xl md:mx-auto">
-                    STALL may be my <span class="italic">favourite</span> tech stack, but I'm also familiar with these other technologies
+                    TALL and VILT may be my <span class="italic">favourite</span> tech stacks, but I'm also familiar with these other fundamental technologies
                 </p>
 
                 <div class="flex justify-center mx-4 mt-8 space-x-4 md:space-x-8 md:mt-16">
                     <x-logos.css3   class="object-contain w-32 h-32" />
                     <x-logos.sass class="object-contain w-32 h-32" />
                     <x-logos.javascript   class="object-contain w-32 h-32" />
-                    <x-logos.vue  class="object-contain w-32 h-32" />
                     <x-logos.mysql  class="object-contain w-32 h-32" />
+                    <x-logos.php-elephant class="object-contain w-32 h-32" />
                 </div>
                 
                 <p class="max-w-md mx-8 my-8 text-lg text-center text-purple-800 font-extralight md:my-16 md:text-xl md:mx-auto ">
-                    I've never worked with React, or Inertia, but I'm enthusiastic for the opportunity to have to learn them both.
+                    I've never worked with React, but I'm enthusiastic for the opportunity to have to learn it.
                 </p>
             </div>
             <svg class="w-full h-24 mt-24" style="transform: scaleX(-1)" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,9 +141,9 @@
         <div class="px-4 mx-auto my-24 max-w-7xl sm:px-6 lg:my-32">
             <div class="lg:grid lg:grid-cols-12 lg:gap-8">
                 <div class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-auto xl:mx-0 lg:col-span-4">
-                    <a href="https://github.com/ProjektGopher/coolcapybara">
+                    <a href="https://github.com/ProjektGopher/LenWoodward_com">
                         <x-logos.github class="object-contain mx-auto mb-4 text-pink-300 transition-all transform fill-current hover:text-purple-300 hover:scale-110 w-72 h-72" />
-                        <span class="inline-block text-gray-500 transition-all transform text-md font-extralight hover:-rotate-1 hover:scale-110">https://github.com/ProjektGopher/coolcapybara</span>
+                        <span class="inline-block text-gray-500 transition-all transform text-md font-extralight hover:-rotate-1 hover:scale-110">https://github.com/ProjektGopher/LenWoodward_com</span>
                     </a>
                     <p class="mt-6 text-xl text-gray-800 font-extralight">Check out the Github repo for this site to see these particular skills in action</p>
                 </div>
@@ -186,59 +166,7 @@
             </div>
         </div>
 
-        <div class="pb-48 text-center text-gray-700 md:pb-72" style="background-color: #ffaa30;">
-            <svg class="w-full h-24 mt-24 mb-48 transform rotate-180 md:mb-72" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1440 79.6584C1410.22 98.8649 1023.24 130.442 773.857 108.956C441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584Z" fill="white"/>
-            </svg>  
-            {{-- tighten yellow #ffaa30 --}}
-            <a id="why" class="sr-only">Why Tighten?</a>
-            <span class="inline-block mx-auto mb-24 md:tracking-widest">
-                <span class="text-6xl font-extrabold md:text-7xl lg:text-9xl">So why</span>
-                <svg class="block w-64 my-12 text-gray-600 md:hidden" id="icon-tighten-logo--vertical" viewBox="0 0 179.76 117.34">
-                    <title>Tighten</title>
-                    <g class="icon" fill="currentColor">
-                        <path class="origin-center cls-2 animate-spin" style="transform-box: fill-box; animation-duration: 3s" d="M114.82,19.15a5.32,5.32,0,0,1,2.41,4.17v26a5.32,5.32,0,0,1-2.41,4.17l-22.53,13a5.32,5.32,0,0,1-4.82,0l-22.53-13a5.34,5.34,0,0,1-2.4-4.17v-26a5.34,5.34,0,0,1,2.4-4.17l22.53-13a5.32,5.32,0,0,1,4.82,0l22.53,13Zm-7.54,18.27V35.23a1.16,1.16,0,0,0-1.16-1.16H98.89a6.75,6.75,0,0,1-6.76-6.75V20.09A1.16,1.16,0,0,0,91,18.93H88.79a1.16,1.16,0,0,0-1.16,1.16v7.23a6.75,6.75,0,0,1-6.75,6.75H73.65a1.16,1.16,0,0,0-1.16,1.16v2.19a1.15,1.15,0,0,0,1.16,1.15h7.23a6.76,6.76,0,0,1,6.75,6.76v7.23a1.16,1.16,0,0,0,1.16,1.16H91a1.16,1.16,0,0,0,1.16-1.16V45.33a6.76,6.76,0,0,1,6.76-6.76h7.23a1.15,1.15,0,0,0,1.16-1.15Z"></path>
-                    </g>
-            
-                    <g class="text" fill="currentColor">
-                        <path class="cls-2" d="M6.42,97.76H0V92.64H18.73v5.12H12.28v19.58H6.42Z"></path>
-                        <path class="cls-2" d="M28.29,92.64h5.86v24.7H28.29Z"></path>
-                        <path class="cls-2" d="M45,112.47v-15c0-3.31,1.58-4.87,4.86-4.87H59c3.28,0,4.87,1.56,4.87,4.87v3.28H58V98.36c0-.53-.18-.67-.67-.67H51.5c-.49,0-.67.14-.67.67v13.26c0,.5.18.67.67.67h5.86c.49,0,.67-.17.67-.67v-3.45H53.87v-4.84h10v9.14c0,3.28-1.59,4.87-4.87,4.87H49.84C46.56,117.34,45,115.75,45,112.47Z"></path>
-                        <path class="cls-2" d="M74.54,92.64h5.85v9.49h7.94V92.64h5.86v24.7H88.33V107.28H80.39v10.06H74.54Z"></path>
-                        <path class="cls-2" d="M110.2,97.76h-6.42V92.64h18.73v5.12h-6.45v19.58H110.2Z"></path>
-                        <path class="cls-2" d="M132.07,92.64h17v5.08H137.93v4.48h8.92v5h-8.92v5.05h11.14v5.08h-17Z"></path>
-                        <path class="cls-2" d="M159.41,92.64h6l8.71,14.5V92.64h5.68v24.7h-5.43L165.09,102v15.31h-5.68Z"></path>
-                    </g>
-                </svg>
-                <svg class="hidden w-64 mx-4 -mt-6 text-gray-600 lg:w-96 lg:-mt-16 md:inline-block" id="icon-tighten-logo--horizontal" viewBox="0 0 260.19 66.18">
-                    <title>Tighten</title>
-                    <g class="icon" fill="currentColor">
-                        <path class="origin-center cls-2 animate-spin" style="transform-box: fill-box; animation-duration: 3s" d="M52.7,17.44a4.89,4.89,0,0,1,2.19,3.8v23.7a4.89,4.89,0,0,1-2.19,3.8L32.17,60.59a4.91,4.91,0,0,1-4.39,0L7.26,48.74a4.89,4.89,0,0,1-2.19-3.8V21.24a4.89,4.89,0,0,1,2.19-3.8L27.78,5.59a4.85,4.85,0,0,1,4.39,0L52.7,17.44ZM45.83,34.08v-2A1.06,1.06,0,0,0,44.77,31H38.18A6.15,6.15,0,0,1,32,24.89V18.3A1.07,1.07,0,0,0,31,17.24H29a1.06,1.06,0,0,0-1.05,1.06v6.59A6.15,6.15,0,0,1,21.77,31H15.19a1.06,1.06,0,0,0-1.06,1.06v2a1.06,1.06,0,0,0,1.06,1.06h6.58a6.15,6.15,0,0,1,6.16,6.15v6.59a1,1,0,0,0,1.05,1h2a1.06,1.06,0,0,0,1.06-1V41.29a6.15,6.15,0,0,1,6.15-6.15h6.59a1.06,1.06,0,0,0,1.06-1.06Z"></path>
-                    </g>
-            
-                    <g class="text" fill="currentColor">
-                        <path class="cls-5" d="M86.84,25.86H80.42V20.74H99.16v5.12H92.7V45.44H86.84Z"></path>
-                        <path class="cls-5" d="M108.71,20.74h5.86v24.7h-5.86Z"></path>
-                        <path class="cls-5" d="M125.4,40.57v-15c0-3.31,1.59-4.87,4.87-4.87h9.13c3.29,0,4.87,1.56,4.87,4.87v3.28h-5.82V26.46c0-.53-.17-.67-.67-.67h-5.85c-.5,0-.67.14-.67.67V39.72c0,.5.17.67.67.67h5.85c.5,0,.67-.17.67-.67V36.27h-4.16V31.43h10v9.14c0,3.28-1.58,4.87-4.87,4.87h-9.13C127,45.44,125.4,43.85,125.4,40.57Z"></path>
-                        <path class="cls-5" d="M155,20.74h5.86v9.49h7.93V20.74h5.86v24.7h-5.86V35.38h-7.93V45.44H155Z"></path>
-                        <path class="cls-5" d="M190.62,25.86H184.2V20.74h18.74v5.12h-6.46V45.44h-5.86Z"></path>
-                        <path class="cls-5" d="M212.49,20.74h17v5.08H218.35V30.3h8.93v5h-8.93v5H229.5v5.08h-17Z"></path>
-                        <path class="cls-5" d="M239.83,20.74h6l8.72,14.5V20.74h5.68v24.7h-5.44l-9.24-15.31V45.44h-5.68Z"></path>
-                    </g>
-                </svg>
-                <span class="text-6xl font-extrabold md:text-7xl lg:text-9xl">?</span>
-            </span>
-            <p class="w-4/5 max-w-6xl mx-auto text-lg leading-relaxed md:leading-loose font-extralight">
-                In the Laravel community, the two most respected dev houses are Spatie, and Tighten. And for good reason.
-                Your encouragement to contribute to and support open source work.
-                Your dedication to work-life balance, as well as family and mental health.
-                How you hold yourselves accountable for maintaining diversity in the workplace.
-                Your respect of other cultures, and just general social responsibility.
-                Tighten has had some of the most impressive alumni, like Adam, Caleb, and Samantha.
-                I love the sense of community that radiates outward in every direction from your company.
-                I would be exceedingly proud to say to someone at a conference I'm attending: "I work at Tighten."
-            </p>
-        </div>
+        {{-- <x-tighten.why /> --}}
 
         <a name="how" class="sr-only">How to reach me</a>
         <div class="relative bg-white">
@@ -254,7 +182,7 @@
                 <div class="space-y-8">
                     <div>
                         <x-svg.phone class="inline object-contain w-12 h-12 mr-1 -mt-4" />
-                        <span class="inline text-2xl text-purple-600 md:text-3xl font-extralight">1.604.992.2418</span>
+                        <span class="inline text-2xl text-purple-600 md:text-3xl font-extralight"><a href="tel:6049922418">1.604.992.2418</a></span>
                     </div>
                     <div>
                         <x-svg.envelope class="inline object-contain w-12 h-12 mr-1 -mt-4" />
@@ -273,30 +201,7 @@
             </div>
             <div class="px-4 py-16 bg-white sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
                 <div class="max-w-lg mx-auto lg:max-w-none">
-                {{-- <form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
-                    <div>
-                    <label for="full_name" class="sr-only">Full name</label>
-                    <input type="text" name="full_name" id="full_name" autocomplete="name" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Full name">
-                    </div>
-                    <div>
-                    <label for="email" class="sr-only">Email</label>
-                    <input id="email" name="email" type="email" autocomplete="email" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Email">
-                    </div>
-                    <div>
-                    <label for="phone" class="sr-only">Phone</label>
-                    <input type="text" name="phone" id="phone" autocomplete="tel" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Phone">
-                    </div>
-                    <div>
-                    <label for="message" class="sr-only">Message</label>
-                    <textarea id="message" name="message" rows="4" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Message"></textarea>
-                    </div>
-                    <div>
-                    <button type="submit" class="inline-flex justify-center px-6 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                        Submit
-                    </button>
-                    </div>
-                </form> --}}
-                <livewire:send-text />
+                    {{-- <livewire:send-text /> --}}
                 </div>
             </div>
             </div>

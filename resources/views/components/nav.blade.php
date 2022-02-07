@@ -5,6 +5,7 @@
                 <span class="sr-only">Len Woodward</span>
                 <span class="p-2 ml-3 text-xl font-extrabold text-blue-100 bg-blue-600 rounded-lg">LW</span>
             </a>
+            {{-- md:hidden download resume --}}
             <div class="flex items-center -mr-2 md:hidden">
                 <button @click="navOpen = true" type="button"
                     class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -22,9 +23,10 @@
         <div class="hidden md:block md:ml-10 md:space-x-10">
             <a href="#who" class="font-medium text-gray-500 hover:text-gray-900">Who am I?</a>
             <a href="#what" class="font-medium text-gray-500 hover:text-gray-900">What am I good at?</a>
-            <a href="#why" class="font-medium text-gray-500 hover:text-gray-900">Why Tighten?</a>
+            {{-- <a href="#why" class="font-medium text-gray-500 hover:text-gray-900">Why Tighten?</a> --}}
             <a href="#how" class="font-medium text-gray-500 hover:text-gray-900">How to reach me</a>
-            <a href="https://github.com/ProjektGopher/coolcapybara" class="font-medium text-gray-500 hover:text-gray-900">This Repo</a>
+            <a href="https://github.com/ProjektGopher/LenWoodward_com" class="font-medium text-gray-500 hover:text-gray-900">This Repo</a>
+            {{-- Download Resume --}}
         </div>
     </div>
 </nav>
@@ -40,7 +42,7 @@
       To: "opacity-0 scale-95"
   -->
 <div x-show="navOpen" @click.away="navOpen = false"
-    class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden">
+    class="absolute z-10 inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden">
     <div class="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
         <div class="flex items-center justify-between px-5 pt-4">
             <div>
@@ -67,13 +69,13 @@
                 <a href="#what"
                     class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                     role="menuitem">What am I good at?</a>
-                <a href="#why"
+                {{-- <a href="#why"
                     class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
-                    role="menuitem">Why Tighten?</a>
+                    role="menuitem">Why Tighten?</a> --}}
                 <a href="#how"
                     class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                     role="menuitem">How to reach me</a>
-                <a href="https://github.com/ProjektGopher/coolcapybara"
+                <a href="https://github.com/ProjektGopher/LenWoodward_com"
                     class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                     role="menuitem">This Repo</a>
             </div>
