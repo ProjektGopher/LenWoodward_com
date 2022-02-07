@@ -108,7 +108,7 @@
                 <x-svg.speech-bubbles class="w-4/5 mx-auto md:max-w-2xl" />
                 
                 <div id="STALLlogos" class="flex justify-center mx-4 mt-8 space-x-4 md:space-x-8 md:mt-16">
-                    <x-logos.spruce   class="object-contain w-32 h-32" />
+                    <x-logos.vue      class="object-contain w-32 h-32 mt-10 md:mt-0" />
                     <x-logos.tailwind class="object-contain w-32 h-32" />
                     <x-logos.alpine   class="object-contain w-32 h-32" />
                     <x-logos.laravel  class="object-contain w-32 h-32" />
@@ -116,19 +116,19 @@
                 </div>
 
                 <p class="max-w-md mx-8 my-8 text-xl text-center text-purple-800 font-extralight md:my-16 md:text-2xl md:mx-auto">
-                    STALL may be my <span class="italic">favourite</span> tech stack, but I'm also familiar with these other technologies
+                    TALL and VILT may be my <span class="italic">favourite</span> tech stacks, but I'm also familiar with these other fundamental technologies
                 </p>
 
                 <div class="flex justify-center mx-4 mt-8 space-x-4 md:space-x-8 md:mt-16">
                     <x-logos.css3   class="object-contain w-32 h-32" />
                     <x-logos.sass class="object-contain w-32 h-32" />
                     <x-logos.javascript   class="object-contain w-32 h-32" />
-                    <x-logos.vue  class="object-contain w-32 h-32" />
                     <x-logos.mysql  class="object-contain w-32 h-32" />
+                    <x-logos.php-elephant class="object-contain w-32 h-32" />
                 </div>
                 
                 <p class="max-w-md mx-8 my-8 text-lg text-center text-purple-800 font-extralight md:my-16 md:text-xl md:mx-auto ">
-                    I've never worked with React, or Inertia, but I'm enthusiastic for the opportunity to have to learn them both.
+                    I've never worked with React, but I'm enthusiastic for the opportunity to have to learn it.
                 </p>
             </div>
             <svg class="w-full h-24 mt-24" style="transform: scaleX(-1)" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
