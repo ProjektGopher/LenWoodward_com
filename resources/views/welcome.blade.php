@@ -151,7 +151,7 @@
                     <ul class="mt-8 text-lg leading-loose font-extralight md:mt-0">
                         <li>CI & CD with Github Actions</li>
                         <li>Familiarity with version control</li>
-                        <li>Serveless deployment with Laravel Vapor</li>
+                        <li>Managed deployment with Laravel Forge</li>
                         <li>Unit, feature, and browser testing</li>
                         <li>SVG creation & manipulation</li>
                         <li>Asset purge & compilation</li>
