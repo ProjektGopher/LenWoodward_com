@@ -68,7 +68,7 @@
 
         <div class="w-full my-32">
             <div class="w-4/5 mx-auto text-lg leading-relaxed text-gray-900 md:w-8/12 md:leading-loose md:text-xl font-extralight">
-                <div class="w-full space-y-8 md:w-1/2">
+                <div class="w-full space-y-8 lg:w-1/2">
                 <p class="">
                     My family has always been involved in construction, and in 2007 I left my dead-end job at the local "Source by Circuit City" (Radio Shack) to start my own renovation business.
                 </p>
