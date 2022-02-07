@@ -38,14 +38,14 @@
     <body class="antialiased">
 
         <div class="relative overflow-hidden bg-white">
-            <div x-data="{ navOpen: false }" class="relative pt-6 pb-16 sm:pb-24 lg:pb-32 bubbles">
+            <div x-data="{ navOpen: false }" class="relative pt-6 pb-48 sm:pb-56 lg:pb-64 bubbles">
             <x-nav />
             {{-- <x-tighten.hey /> --}}
             </div>
         </div>
 
-        <div class="w-full mt-32 bg-gradient-to-tr from-blue-300 to-blue-500 h-128">
-            <div class="w-8/12 mx-auto">
+        <div class="w-full bg-gradient-to-tr from-blue-300 to-blue-500 h-128">
+            <div class="relative w-8/12 mx-auto">
                 <a id="who" class="sr-only">Who am I?</a>
                 <img src="{{ asset('img/profile.jpg') }}" alt="Len Woodward" class="inline h-64 -mt-32 border-8 border-gray-500 rounded-full">
                 <span class="inline-block mt-12 ml-4 text-4xl font-extrabold transform -rotate-3 md:-rotate-6">What's up?</span>
