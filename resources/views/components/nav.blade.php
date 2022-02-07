@@ -5,6 +5,7 @@
                 <span class="sr-only">Len Woodward</span>
                 <span class="p-2 ml-3 text-xl font-extrabold text-blue-100 bg-blue-600 rounded-lg">LW</span>
             </a>
+            {{-- md:hidden download resume --}}
             <div class="flex items-center -mr-2 md:hidden">
                 <button @click="navOpen = true" type="button"
                     class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -25,6 +26,7 @@
             {{-- <a href="#why" class="font-medium text-gray-500 hover:text-gray-900">Why Tighten?</a> --}}
             <a href="#how" class="font-medium text-gray-500 hover:text-gray-900">How to reach me</a>
             <a href="https://github.com/ProjektGopher/LenWoodward_com" class="font-medium text-gray-500 hover:text-gray-900">This Repo</a>
+            {{-- Download Resume --}}
         </div>
     </div>
 </nav>
