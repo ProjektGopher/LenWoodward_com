@@ -76,7 +76,7 @@
                 <p class="p-2 text-white monotalic">
                     $ cat resources/js/LenWoodward.vue
                 </p>
-                <pre class="pl-4 monotalic"><code class="">&lt;template&gt;
+                <pre class="pl-4 monotalic"><code class="vue">&lt;template&gt;
   &lt;p&gt;
     What's up? I'm @{{ firstName }}
     (@{{ pronouns }}),
@@ -112,6 +112,33 @@
     "<span class="text-lime-600">github</span>" => "<span class="font-mono text-lime-300">ProjektGopher</span>"
   ]
 }</pre>
+            </div>
+
+            <a name="education" class="sr-only">What I know</a>
+            <div class="mt-16 mb-12">
+                <p class="p-2 text-white monotalic">
+                    $ curl localhost:3000/education.json
+                </p>
+                <pre class="overflow-x-scroll monotalic"><code class="json">{
+	"education": {
+		"formal": {
+			"secondary": "Earl Marriott Secondary School",
+			"post-secondary": null
+		},
+		"self-directed": {
+            Laracasts
+            Eloquent Performance Patterns - Jonathan Reinink
+            Laravel Package Development - Freek Murze
+            Laravel Queues in Action - Mohamed Said
+            Make VSCode Awesome - Caleb Porzio
+            Confident Laravel - JMac
+            Base Laravel - JMac
+            Base Code - JMac
+            Getting Git - JMac
+            Hundreds upon hundreds of hours on youtube
+		}
+	}
+}</code></pre>
             </div>
 
             <a name="projects" class="sr-only">Some things I've made</a>
