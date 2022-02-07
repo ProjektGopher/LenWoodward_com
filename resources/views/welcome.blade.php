@@ -180,7 +180,7 @@
                 <div class="space-y-8">
                     <div>
                         <x-svg.phone class="inline object-contain w-12 h-12 mr-1 -mt-4" />
-                        <span class="inline text-2xl text-purple-600 md:text-3xl font-extralight">1.604.992.2418</span>
+                        <span class="inline text-2xl text-purple-600 md:text-3xl font-extralight"><a href="tel:6049922418">1.604.992.2418</a></span>
                     </div>
                     <div>
                         <x-svg.envelope class="inline object-contain w-12 h-12 mr-1 -mt-4" />
