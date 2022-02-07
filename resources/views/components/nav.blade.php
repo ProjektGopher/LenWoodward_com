@@ -40,7 +40,7 @@
       To: "opacity-0 scale-95"
   -->
 <div x-show="navOpen" @click.away="navOpen = false"
-    class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden">
+    class="absolute z-10 inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden">
     <div class="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
         <div class="flex items-center justify-between px-5 pt-4">
             <div>
