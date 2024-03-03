@@ -122,10 +122,11 @@
                 </p>
 
                 <div class="flex justify-center mx-4 mt-8 space-x-4 md:space-x-8 md:mt-16">
-                    <x-logos.css3   class="object-contain w-32 h-32" />
+                    <x-logos.css3 class="object-contain w-32 h-32" />
                     <x-logos.sass class="object-contain w-32 h-32" />
-                    <x-logos.javascript   class="object-contain w-32 h-32" />
-                    <x-logos.mysql  class="object-contain w-32 h-32" />
+                    {{-- <x-logos.javascript class="object-contain w-32 h-32" /> --}}
+                    <x-logos.ffmpeg class="object-contain w-32 h-32" />
+                    <x-logos.mysql class="object-contain w-32 h-32" />
                     <x-logos.php-elephant class="object-contain w-32 h-32" />
                 </div>
                 
