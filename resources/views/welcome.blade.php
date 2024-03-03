@@ -137,6 +137,7 @@
                 <path d="M1440 79.6584C1410.22 98.8649 1023.24 130.442 773.857 108.956C441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584Z" fill="white"/>
             </svg>  
         </div>
+        <x-popular-work />
 
         <div class="px-4 mx-auto my-24 max-w-7xl sm:px-6 lg:my-32">
             <div class="lg:grid lg:grid-cols-12 lg:gap-8">
