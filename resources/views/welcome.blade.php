@@ -54,8 +54,8 @@
                 <span class="inline-block ml-4 text-4xl font-thin">My name's Len.</span>
                 <span class="inline-block ml-1 text-2xl text-blue-100 opacity-75 font-extralight">(He/Him/His)</span>
                 <p class="mt-4 text-lg text-gray-900 xl:text-xl font-extralight">
-                    I live with my wife <a href="https://www.twitter.com/Ssshlyn" target="_blank" class="text-indigo-600">Ashlyn</a> about 40 minutes south of Vancouver, Canada, in Langley City.
-                    I acknowlege that where I work, live, and play, is on the unceded territory of the Matsqui, Kwantlen, and Katzie communities.
+                    I live with my wife <a href="https://www.twitter.com/teacherhorstead" target="_blank" class="text-indigo-600">Ashlyn</a> about 40 minutes east of Vancouver, Canada, in Maple Ridge.
+                    I acknowlege that where I work, live, and play, is on the unceded territory of the Kwantlen and Katzie communities.
                 </p>
                 <p class="mt-4 text-lg text-gray-900 xl:text-xl font-extralight">
                     I've been working with code in one form or another since about 2003 when I was writing Visual Basic in high school.
@@ -72,7 +72,7 @@
             <div class="w-4/5 mx-auto text-lg leading-relaxed text-gray-900 md:w-8/12 md:leading-loose md:text-xl font-extralight">
                 <div class="w-full space-y-8 lg:w-1/2">
                 <p class="">
-                    My family has always been involved in construction, and in 2007 I left my dead-end job at the local "Source by Circuit City" (Radio Shack) to start my own renovation business.
+                    My family has always been involved in construction, and in 2007 I left my sales job at the local "Source by Circuit City" (Radio Shack) to start my own renovation business.
                 </p>
                 <p class="">
                     <a href="https://staging.penhome.ca">
@@ -81,20 +81,22 @@
                         <span class="relative p-1 -mr-2 text-gray-800 font-md hover:underline">Peninsula Home Services</span>
                     </div>
                     </a>
-                    has been my primary source of income for the last 15 years now.
-                    I've done well, but with a growing family (we welcomed baby Allison to our family in early June) I felt that it was time to shut down the construction business, and focus exclusively on writing code.
-                    I know that I don't want to be the father who's "too busy" to make it to important events, so I've decided that working away from home isn't the way to accomplish that.
+                    was my primary source of income for 15 years. I did well, but with a growing family
+                    (we welcomed little Allison in June '21, and baby Everett in July '23)
+                    I felt that it was time to shut down the construction business and focus exclusively on writing code.
+                    I knew that I didn't want to be the father who's "too busy" to make it to important events,
+                    so I decided that working away from home wasn't the way to accomplish that.
                 </p>
                 <p class="">
-                    Since that very first calculator program I wrote in VB over 19 years ago, I've been constantly writing code to help my family run our businesses,
-                    for personal projects, and for freelance projects as
                     <a href="https://projektgopher.com">
                         <div class="relative inline mr-2">
                             <div class="absolute top-0 left-0 w-full h-full transform bg-yellow-200 -rotate-1"></div>
-                            <span class="relative p-1 -mr-2 text-gray-800 font-md hover:underline">ProjektGopher Multimedia.</span>
+                            <span class="relative p-1 -mr-2 text-gray-800 font-md hover:underline">ProjektGopher Multimedia</span>
                         </div>
                     </a>
-                    I work exclusively in the web, and am always staying up-to-date with current trends as well as new and interesting technologies.
+                    has been the umbrella under which I've constantly written code to help my family run our businesses,
+                    for personal projects, and for freelance projects, since that very first calculator program I wrote in VB over {{ now()->format('Y') - 2003 }} years ago.
+                    I work exclusively in the web, and am always staying <span class="break-keep">up-to-date</span> with current trends as well as new and interesting technologies.
                 </p>
                 </div>
                 <div>
@@ -122,10 +124,11 @@
                 </p>
 
                 <div class="flex justify-center mx-4 mt-8 space-x-4 md:space-x-8 md:mt-16">
-                    <x-logos.css3   class="object-contain w-32 h-32" />
+                    <x-logos.css3 class="object-contain w-32 h-32" />
                     <x-logos.sass class="object-contain w-32 h-32" />
-                    <x-logos.javascript   class="object-contain w-32 h-32" />
-                    <x-logos.mysql  class="object-contain w-32 h-32" />
+                    {{-- <x-logos.javascript class="object-contain w-32 h-32" /> --}}
+                    <x-logos.ffmpeg class="object-contain w-32 h-32" />
+                    <x-logos.mysql class="object-contain w-32 h-32" />
                     <x-logos.php-elephant class="object-contain w-32 h-32" />
                 </div>
                 
@@ -133,10 +136,13 @@
                     I've never worked with React, but I'm enthusiastic for the opportunity to have to learn it.
                 </p>
             </div>
-            <svg class="w-full h-24 mt-24" style="transform: scaleX(-1)" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1440 79.6584C1410.22 98.8649 1023.24 130.442 773.857 108.956C441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584Z" fill="white"/>
+            <svg class="w-full h-24 mt-24 text-pink-200" style="transform: scaleX(-1)" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1440 79.6584C1410.22 98.8649 1023.24 130.442 773.857 108.956C441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584Z" fill="currentcolor"/>
             </svg>  
         </div>
+
+        <x-media-mentions />
+        <x-popular-work />
 
         <div class="px-4 mx-auto my-24 max-w-7xl sm:px-6 lg:my-32">
             <div class="lg:grid lg:grid-cols-12 lg:gap-8">
