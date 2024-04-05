@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/for-{company:slug}', function (\App\Models\Company $company) {
+    return view('welcome', ['company' => $company]);
+});

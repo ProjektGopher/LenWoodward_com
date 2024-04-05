@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-        <title>Len Woodward{{-- | Tighten Application --}}</title>
+        <title>Len Woodward @if (isset($company)) | {{ $company->name }} Application @endif </title>
 
         <style>
             .bubbles {
@@ -42,7 +42,10 @@
         <div class="relative overflow-hidden bg-white">
             <div x-data="{ navOpen: false }" class="relative pt-6 pb-48 sm:pb-56 lg:pb-64 bubbles">
             <x-nav />
-            {{-- <x-tighten.hey /> --}}
+
+            @if (isset($company))
+                <x-dynamic-component :component="$company->slug.'.hey'" />
+            @endif
             </div>
         </div>
 
@@ -172,7 +175,9 @@
             </div>
         </div>
 
-        {{-- <x-tighten.why /> --}}
+        @if (isset($company))
+            <x-dynamic-component :component="$company->slug.'.why'" />
+        @endif
 
         <a name="how" class="sr-only">How to reach me</a>
         <div class="relative bg-white">
