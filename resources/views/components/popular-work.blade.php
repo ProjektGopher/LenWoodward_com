@@ -12,36 +12,16 @@
       </span>
   </span>
   <div class="w-4/5 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 p-4 sm:p-8 gap-8">
-    <a href="https://github.com/ProjektGopher/whisky">
-      <article class="bg-white h-full rounded-2xl shadow-2xl p-4 sm:p-8 mt-12 text-lg text-gray-700 leading-relaxed md:leading-loose font-extralight flex flex-col justify-between hover:scale-105 transform transition-all">
+    <x-featured-php-project-card :project="App\Models\FeaturedPhpProject::where(['org' => 'ProjektGopher', 'repo' => 'whisky'])->sole()">
         <img src="https://github.com/ProjektGopher/whisky/blob/main/art/logo.svg?raw=true" alt="whisky logo" class="w-full mx-auto" />
-        <p class="w-4/5 mx-auto">
-          Whisky is the simplest, framework agnostic, CLI tool for managing and enforcing a php project's git hooks across an entire team.
-        </p>
-        <ul class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 justify-between w-4/5 mx-auto mt-12 text-base text-gray-500">
-          <li class="flex gap-2 content-center justify-start"><x-svg.tag />v0.6.0</li>
-          <li class="flex gap-2 content-center justify-start"><x-svg.star />128</li>
-          <li class="flex gap-2 content-center justify-start"><x-svg.download />14k downloads</li>
-        </ul>
-      </article>
-    </a>
+    </x-featured-php-project-card>
 
-    <a href="https://github.com/ProjektGopher/laravel-ffmpeg-tools" target="_blank">
-      <article class="bg-white h-full rounded-2xl shadow-2xl p-4 sm:p-8 mt-12 text-lg text-gray-700 leading-relaxed md:leading-loose font-extralight flex flex-col justify-between hover:scale-105 transform transition-all">
-        <span class="text-5xl font-serif text-black mt-8">Laravel FFMpeg Tools</span>
-        <div class="w-4/5 opacity-30 flex justify-around mx-auto">
-          <x-logos.laravel class="h-32" />
-          <x-logos.ffmpeg class="h-32" />
-        </div>
-        <p class="w-4/5 mx-auto">
-          Tools and utilities to help generate complex strings for FFMpeg in Laravel.
-        </p>
-        <ul class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 justify-between w-4/5 mx-auto mt-12 text-base text-gray-500">
-          <li class="flex gap-2 content-center justify-start"><x-svg.tag />v0.7.0</li>
-          <li class="flex gap-2 content-center justify-start"><x-svg.star />44</li>
-          <li class="flex gap-2 content-center justify-start"><x-svg.download />6.3k downloads</li>
-        </ul>
-      </article>
-    </a>
+    <x-featured-php-project-card :project="App\Models\FeaturedPhpProject::where(['org' => 'ProjektGopher', 'repo' => 'laravel-ffmpeg-tools'])->sole()">
+      <span class="text-5xl font-serif text-black mt-8">Laravel FFMpeg Tools</span>
+      <div class="w-4/5 opacity-30 flex justify-around mx-auto">
+        <x-logos.laravel class="h-32" />
+        <x-logos.ffmpeg class="h-32" />
+      </div>
+    </x-featured-php-project-card>
   </div>
 </div>
