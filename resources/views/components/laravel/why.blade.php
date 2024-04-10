@@ -9,13 +9,15 @@
         </span>
     </span>
     <p class="w-4/5 max-w-6xl mx-auto text-xl leading-relaxed md:leading-loose font-light">
-        It's not an exaggeration to say that Laravel has changed my life.
+        It's not an exaggeration to say that Laravel has <i>changed my life</i>.
         I appreciate your encouragement to contribute to and support open source work, as well as
         your dedication to work-life balance, and family/mental health.
         I admire how you hold yourselves accountable for maintaining diversity in the workplace,
         your respect of other cultures, and just general social responsibility.
-        Laravel has some of the most impressive minds; Like Jess, Tim, and Joe.
+        <b>Laravel has some of the most impressive minds</b>; like Jess, Tim, and Joe,
+        and I would absolutely love to have the opportunity to learn from them.
         I love the sense of community that radiates outward in every direction from your company.
-        I would be exceedingly proud to say to someone at a conference I'm attending: "I work at Laravel."
+        I would be exceedingly proud to say to someone at a conference I'm attending:
+        "<u style="text-decoration-color: LightCoral;">I work at Laravel</u>."
     </p>
 </div>

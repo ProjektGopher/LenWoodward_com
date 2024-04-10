@@ -71,6 +71,10 @@
             </svg>        
         </div>
 
+        @if (isset($company))
+            <x-dynamic-component :component="$company->slug.'.why'" />
+        @endif
+
         <div class="w-full my-32">
             <div class="w-4/5 mx-auto text-lg leading-relaxed text-gray-900 md:w-8/12 md:leading-loose md:text-xl font-extralight">
                 <div class="w-full space-y-8 lg:w-1/2">
@@ -174,10 +178,6 @@
                 </div>
             </div>
         </div>
-
-        @if (isset($company))
-            <x-dynamic-component :component="$company->slug.'.why'" />
-        @endif
 
         <a name="how" class="sr-only">How to reach me</a>
         <div class="relative bg-white">
