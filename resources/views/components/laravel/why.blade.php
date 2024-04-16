@@ -3,7 +3,7 @@
         <path d="M1440 79.6584C1410.22 98.8649 1023.24 130.442 773.857 108.956C441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584Z" fill="white"/>
     </svg>  
     <a id="why" class="sr-only">Why Laravel?</a>
-    <div class="mx-24 flex flex-col 2xl:flex-row gap-24 items-center justify-center">
+    <div class="mx-0 lg:mx-24 flex flex-col 2xl:flex-row gap-24 items-center justify-center">
         <div>
             <span class="inline-block mx-auto mb-24 md:tracking-widest text-6xl font-extrabold md:text-7xl lg:text-9xl">
                 So why <span class="border-b-2 border-red-300">Laravel</span>?

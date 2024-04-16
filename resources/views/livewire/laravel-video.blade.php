@@ -4,7 +4,7 @@
         <div class="absolute inset-0 flex items-center justify-center">
             <div class="absolute inset-0 bg-gradient-to-b from-gray-900 to-transparent"></div>
             <div class="relative p-4 w-4/5 h-2/5 rounded-xl shadow-xl bg-red-50">
-                <p class="text-red-600 font-thin text-xl">
+                <p class="text-red-600 font-thin text-lg lg:text-xl">
                     Ok... This is a little embarrassing, but I don't have a video to show you.
                     I thought I'd have it done before you got here, but I'm still working on it.
                     Can you try again tomorrow?
@@ -16,7 +16,7 @@
         <div class="absolute inset-0 flex items-center justify-center">
             <div class="absolute inset-0 bg-gradient-to-b from-gray-900 to-transparent"></div>
             <div class="relative p-4 w-4/5 h-2/5 rounded-xl shadow-xl bg-red-50">
-                <label for="codeword" class="text-red-600 font-semibold font-mono text-2xl">What's the secret codeword?</label>
+                <label for="codeword" class="text-red-600 font-semibold font-mono text-xl lg:text-2xl">What's the secret codeword?</label>
                 <input type="text" id="codeword" wire:model="codeword" wire:keydown.enter="showVideo" class="w-4/5 h-12 px-4 mt-6 text-2xl font-semibold font-mono text-center text-red-600 bg-red-100 border-2 border-red-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300" />
                 <button wire:click="showVideo" class="absolute -right-6 -bottom-6 flex items-center justify-center w-16 h-16 text-white bg-red-600 rounded-full shadow-xl">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
