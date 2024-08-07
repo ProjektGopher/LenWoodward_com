@@ -19,6 +19,10 @@ class FeaturedPhpProject extends Model
             'org' => 'ProjektGopher',
             'repo' => 'laravel-ffmpeg-tools',
         ],
+        [
+            'org' => 'artisan-build',
+            'repo' => 'community-prompts',
+        ],
     ];
 
     public function fetchGitHubData(): void
