@@ -59,5 +59,25 @@
                 </section>
             </article>
         </a>
+
+        <a href="https://overengineered.fm/episodes/reactphp-event-loops-w-len-woodward" target="_blank">
+            <article
+                class="bg-white h-full pb-4 rounded-2xl shadow-2xl text-lg text-gray-700 leading-relaxed md:leading-loose font-extralight flex flex-col justify-between hover:scale-105 transform transition-all">
+                <div class="aspect-square w-full rounded-lg shadow-lg">
+                    <img src="https://img.transistor.fm/AaNAUH6QROfZVM8_-PSNKxx5BWAKwOrwNTFZN-wfk98/rs:fill:800:800:1/q:60/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9zaG93/LzQ3NjE2LzE3MDIw/NjAzMTEtYXJ0d29y/ay5qcGc.webp"
+                        alt="Over Engineered" class="h-full w-full rounded-lg object-cover">
+                </div>
+                <section class="relative p-4">
+                    <h3 class="text-gray-500 text-lg mb-4 font-extralight flex items-center">
+                        Episode 22 (<time>Aug 7, 2024</time>)
+                    </h3>
+                    <span class="absolute text-gray-400 text-sm flex top-4 right-4">
+                        <x-svg.clock class="h-4 w-4" />
+                        <span>1:15:18</span>
+                    </span>
+                    <h2 class="text-gray-700 text-xl font-extralight">ReactPHP + Event Loops w/ Len Woodward</h2>
+                </section>
+            </article>
+        </a>
     </div>
 </div>
