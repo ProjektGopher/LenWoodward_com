@@ -25,6 +25,10 @@
         <x-logos.ffmpeg class="h-32" />
       </div>
     </x-featured-php-project-card>
+
+    <x-featured-php-project-card :project="App\Models\FeaturedPhpProject::where(['org' => 'artisan-build', 'repo' => 'community-prompts'])->sole()">
+      <img src="https://github.com/artisan-build/community-prompts/blob/main/art/logo.svg?raw=true" alt="community prompts logo" class="w-full mx-auto" />
+    </x-featured-php-project-card>
   </div>
 
   <p class="mt-16 px-4 text-gray-800 max-w-3xl leading-loose text-xl font-thin mx-auto">
