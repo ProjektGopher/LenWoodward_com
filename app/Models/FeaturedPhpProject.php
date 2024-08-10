@@ -23,6 +23,10 @@ class FeaturedPhpProject extends Model
             'org' => 'artisan-build',
             'repo' => 'community-prompts',
         ],
+        [
+            'org' => 'artisan-build',
+            'repo' => 'conductor',
+        ],
     ];
 
     public function fetchGitHubData(): void

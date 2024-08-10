@@ -29,6 +29,12 @@
     <x-featured-php-project-card :project="App\Models\FeaturedPhpProject::where(['org' => 'artisan-build', 'repo' => 'community-prompts'])->sole()">
       <img src="https://github.com/artisan-build/community-prompts/blob/main/art/logo.svg?raw=true" alt="community prompts logo" class="w-full mx-auto" />
     </x-featured-php-project-card>
+
+    <x-featured-php-project-card :project="App\Models\FeaturedPhpProject::where(['org' => 'artisan-build', 'repo' => 'conductor'])->sole()">
+      <h3 class="text-5xl text-black mt-8 tracking-widest font-thin">Conductor</h3>
+      <h4 class="text-2xl text-gray-600 tracking-widest font-thin">(not officially released yet.)</h4>
+      <img src="https://raw.githubusercontent.com/artisan-build/conductor/main/art/composer_conductor.webp" alt="conductor logo" class="w-1/2 mx-auto" />
+    </x-featured-php-project-card>
   </div>
 
   <p class="mt-16 px-4 text-gray-800 max-w-3xl leading-loose text-xl font-thin mx-auto">
