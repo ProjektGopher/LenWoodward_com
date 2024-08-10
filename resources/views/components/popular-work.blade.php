@@ -13,7 +13,7 @@
       </span>
   </span>
 
-  <div class="w-4/5 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 p-4 sm:p-8 gap-8">
+  <div class="w-full xl:w-4/5 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 p-4 sm:p-8 gap-8">
     <x-featured-php-project-card :project="App\Models\FeaturedPhpProject::where(['org' => 'ProjektGopher', 'repo' => 'whisky'])->sole()">
         <img src="https://github.com/ProjektGopher/whisky/blob/main/art/logo.svg?raw=true" alt="whisky logo" class="w-full mx-auto" />
     </x-featured-php-project-card>
@@ -37,7 +37,7 @@
     </x-featured-php-project-card>
   </div>
 
-  <p class="mt-16 px-4 text-gray-800 max-w-3xl leading-loose text-xl font-thin mx-auto">
+  <p class="mt-32 px-4 text-gray-800 max-w-3xl leading-loose text-xl font-thin mx-auto">
     By the way, these cards are updated automatically every day using the
     GitHub and Packagist APIs, without using a database. I don't have to
     do anything to keep them up-to-date. 😎  If you'd like to see how I
