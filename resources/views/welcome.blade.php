@@ -50,24 +50,36 @@
         </div>
 
         <div class="w-full bg-gradient-to-tr from-blue-300 to-blue-500 h-128">
-            <div class="relative w-8/12 mx-auto">
-                <a id="who" class="sr-only">Who am I?</a>
-                <img src="{{ asset('img/profile.jpg') }}" alt="Len Woodward" class="inline h-64 -mt-32 border-8 border-gray-500 rounded-full">
-                <span class="inline-block mt-12 ml-4 text-4xl font-extrabold transform -rotate-3 md:-rotate-6">What's up?</span>
-                <span class="inline-block ml-4 text-4xl font-thin">My name's Len.</span>
-                <span class="inline-block ml-1 text-2xl text-blue-100 opacity-75 font-extralight">(He/Him/His)</span>
-                <p class="mt-4 text-lg text-gray-900 xl:text-xl font-extralight">
-                    I live with my wife <a href="https://www.twitter.com/teacherhorstead" target="_blank" class="text-indigo-600">Ashlyn</a> about 40 minutes east of Vancouver, Canada, in Maple Ridge.
-                    I acknowlege that where I work, live, and play, is on the unceded territory of the Kwantlen and Katzie communities.
-                </p>
-                <p class="mt-4 text-lg text-gray-900 xl:text-xl font-extralight">
-                    I've been working with code in one form or another since about 2003 when I was writing Visual Basic in high school.
-                    I also started dabbling in some simple HTML at that time. I got my first paid programming gig in 2005.
-                    It was a subscription based math tutoring app, but being fresh out of school, it was not good.
-                </p>
+            <div class="flex flex-col md:flex-row w-full md:w-4/5 mx-auto gap-24">
+                <div class="relative mx-8 md:mx-0 w-4/5 xl:w-1/2">
+                    <a id="who" class="sr-only">Who am I?</a>
+                    <img src="{{ asset('img/profile.jpg') }}" alt="Len Woodward" class="inline h-64 -mt-32 border-8 border-gray-500 rounded-full">
+                    <span class="inline-block mt-12 ml-4 text-4xl font-extrabold transform -rotate-3 md:-rotate-6">What's up?</span>
+                    <span class="inline-block ml-4 text-4xl font-thin">My name's Len.</span>
+                    <span class="inline-block ml-1 text-2xl text-blue-100 opacity-75 font-extralight">(He/Him/His)</span>
+                    <p class="mt-4 text-lg text-gray-900 xl:text-xl font-extralight md:leading-relaxed xl:leading-loose">
+                        I live with my wife <a href="https://www.twitter.com/teacherhorstead" target="_blank" class="text-indigo-50">Ashlyn</a>,
+                        and two children (Allison and Everett) about 40 minutes east of Vancouver, Canada, in Maple Ridge.
+                        I acknowledge that where I work, live, and play, is on the unceded territory of the Kwantlen and Katzie communities.
+                    </p>
+                    <p class="mt-4 text-lg text-gray-900 xl:text-xl font-extralight md:leading-relaxed xl:leading-loose">
+                        I've been working with code in one form or another since about 2003 when I was writing Visual Basic in high school.
+                        I also started dabbling in some simple HTML at that time. I got my first paid programming gig in 2005.
+                        It was a subscription based math tutoring app, but being fresh out of school, it was not good.
+                    </p>
+                </div>
+
+                <div class="px-4 py-16 bg-blue-300 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12 hidden xl:block">
+                    <x-lets-chat />
+                </div>
             </div>
             <svg class="w-full h-24 mt-24" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1440 79.6584C1410.22 98.8649 1023.24 130.442 773.857 108.956C441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584Z" fill="white"/>
+                <path d="M 1440 79.6584
+                    C 1410.22 98.8649 1023.24 130.442 773.857 108.956
+                    C 441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584
+                    Z"
+                    fill="white"
+                />
             </svg>        
         </div>
 
@@ -76,38 +88,12 @@
         @endif
 
         <div class="w-full my-32">
-            <div class="w-4/5 mx-auto text-lg leading-relaxed text-gray-900 md:w-8/12 md:leading-loose md:text-xl font-extralight">
-                <div class="w-full space-y-8 lg:w-1/2">
-                <p class="">
-                    My family has always been involved in construction, and in 2007 I left my sales job at the local "Source by Circuit City" (Radio Shack) to start my own renovation business.
-                </p>
-                <p class="">
-                    <a href="https://staging.penhome.ca">
-                    <div class="relative inline mr-2">
-                        <div class="absolute top-0 left-0 w-full h-full transform bg-pink-200 rotate-1"></div>
-                        <span class="relative p-1 -mr-2 text-gray-800 font-md hover:underline">Peninsula Home Services</span>
-                    </div>
-                    </a>
-                    was my primary source of income for 15 years. I did well, but with a growing family
-                    (we welcomed little Allison in June '21, and baby Everett in July '23)
-                    I felt that it was time to shut down the construction business and focus exclusively on writing code.
-                    I knew that I didn't want to be the father who's "too busy" to make it to important events,
-                    so I decided that working away from home wasn't the way to accomplish that.
-                </p>
-                <p class="">
-                    <a href="https://projektgopher.com">
-                        <div class="relative inline mr-2">
-                            <div class="absolute top-0 left-0 w-full h-full transform bg-yellow-200 -rotate-1"></div>
-                            <span class="relative p-1 -mr-2 text-gray-800 font-md hover:underline">ProjektGopher Multimedia</span>
-                        </div>
-                    </a>
-                    has been the umbrella under which I've constantly written code to help my family run our businesses,
-                    for personal projects, and for freelance projects, since that very first calculator program I wrote in VB over {{ now()->format('Y') - 2003 }} years ago.
-                    I work exclusively in the web, and am always staying <span class="break-keep">up-to-date</span> with current trends as well as new and interesting technologies.
-                </p>
+            <div class="xl:flex w-4/5 mx-auto text-lg leading-relaxed text-gray-900 2xl:w-8/12 md:leading-loose md:text-xl font-extralight">
+                <div class="w-full 2xl:w-1/2">
+                    <x-my-story />
                 </div>
-                <div>
-                    <!-- I'm just gonna go ahead and leave this blank. I kinda dig the extra white space. Room to breeeeeeeeathe -->
+                <div class="hidden 2xl:flex items-center flex-1">
+                    <x-svg.family-portrait class="w-full aspect-[3/2]" />
                 </div>
             </div>
         </div>
@@ -151,70 +137,41 @@
         <x-media-mentions />
         <x-popular-work />
 
-        <div class="px-4 mx-auto my-24 max-w-7xl sm:px-6 lg:my-32">
-            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-                <div class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-auto xl:mx-0 lg:col-span-4">
-                    <a href="https://github.com/ProjektGopher/LenWoodward_com">
-                        <x-logos.github class="object-contain mx-auto mb-4 text-pink-300 transition-all transform fill-current hover:text-purple-300 hover:scale-110 w-72 h-72" />
-                        <span class="inline-block text-gray-500 transition-all transform text-md font-extralight hover:-rotate-1 hover:scale-110">https://github.com/ProjektGopher/LenWoodward_com</span>
-                    </a>
-                    <p class="mt-6 text-xl text-gray-800 font-extralight">Check out the Github repo for this site to see these particular skills in action</p>
-                </div>
-                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-8 lg:text-left">
-                    <ul class="mt-8 text-lg leading-loose font-extralight md:mt-0">
-                        <li>CI & CD with Github Actions</li>
-                        <li>Familiarity with version control</li>
-                        <li>Managed deployment with Laravel Forge</li>
-                        <li>Unit, feature, and browser testing</li>
-                        <li>SVG creation & manipulation</li>
-                        <li>Asset purge & compilation</li>
-                        <li>Basic Responsive Design</li>
-                        <li>Tailwind</li>
-                        <li>Alpine</li>
-                        <li>Livewire</li>
-                        <li>Blade components</li>
-                        <li>3rd party API consumption</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <a name="how" class="sr-only">How to reach me</a>
         <div class="relative bg-white">
             <div class="absolute inset-0">
-            <div class="absolute inset-y-0 left-0 w-1/2 bg-gray-50"></div>
+                <div class="absolute inset-y-0 left-0 w-1/2 bg-gray-200"></div>
             </div>
             <div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
-            <div class="px-4 py-16 bg-gray-50 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
-                <div class="max-w-lg mx-auto">
-                <h2 class="mb-16 text-3xl text-purple-900 md:text-6xl font-extralight tracking-loose">
-                    Let's chat!
-                </h2>
-                <div class="space-y-8">
-                    <div>
-                        <x-svg.phone class="inline object-contain w-12 h-12 mr-1 -mt-4" />
-                        <span class="inline text-2xl text-purple-600 md:text-3xl font-extralight"><a href="tel:6049922418">1.604.992.2418</a></span>
-                    </div>
-                    <div>
-                        <x-svg.envelope class="inline object-contain w-12 h-12 mr-1 -mt-4" />
-                        <span class="inline text-2xl text-purple-600 md:text-3xl font-extralight">Len at ProjektGopher dot com</span>
-                    </div>
-                    <div>
-                        <x-svg.bird class="inline object-contain w-12 h-12 mr-1 -mt-4" />
-                        <span class="inline text-2xl text-purple-600 md:text-3xl font-extralight">@ProjektGopher</span>
-                    </div>
-                    <div>
-                        <x-logos.github class="inline object-contain w-12 h-12 mr-1 -mt-4 text-purple-400" />
-                        <span class="inline text-2xl text-purple-600 md:text-3xl font-extralight">ProjektGopher</span>
+                <div class="px-4 py-16 bg-gray-100 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+                    <div class="max-w-lg mx-auto lg:max-w-none">
+                        <a name="how" class="sr-only">How to reach me</a>
+                        <x-lets-chat />
+                        {{-- <livewire:send-text /> --}}
                     </div>
                 </div>
+                <div class="px-4 py-16 bg-white sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+                    <div class="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-auto xl:mx-0 lg:col-span-4 text-center">
+                        <a href="https://github.com/ProjektGopher/LenWoodward_com">
+                            <x-logos.github class="object-contain mx-auto mb-4 text-pink-300 transition-all transform fill-current hover:text-purple-300 hover:scale-110 w-72 h-72" />
+                            <span class="inline-block text-gray-500 transition-all transform text-md font-extralight hover:-rotate-1 hover:scale-110">https://github.com/ProjektGopher/LenWoodward_com</span>
+                        </a>
+                        <p class="mt-6 text-xl text-gray-800 font-extralight">Check out the Github repo for this site to see these particular skills in action</p>
+                        <ul class="mt-8 text-normal text-gray-500 leading-tight font-extralight">
+                            <li>CI & CD with Github Actions</li>
+                            <li>Familiarity with version control</li>
+                            <li>Managed deployment with Laravel Forge</li>
+                            <li>Unit, feature, and browser testing</li>
+                            <li>SVG creation & manipulation</li>
+                            <li>Asset purge & compilation</li>
+                            <li>Basic Responsive Design</li>
+                            <li>Tailwind</li>
+                            <li>Alpine</li>
+                            <li>Livewire</li>
+                            <li>Blade components</li>
+                            <li>3rd party API consumption</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="px-4 py-16 bg-white sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
-                <div class="max-w-lg mx-auto lg:max-w-none">
-                    {{-- <livewire:send-text /> --}}
-                </div>
-            </div>
             </div>
         </div>
         
