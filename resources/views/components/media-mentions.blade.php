@@ -1,9 +1,10 @@
 <a id="media" class="sr-only">Media Mentions</a>
 <div class="-mt-32 pt-32 pb-48 text-center bg-pink-200 text-gray-700 md:pb-72">
-    <span class="inline-block mx-auto mb-24 md:tracking-widest">
+    <span class="inline-block mx-auto mb-24 xl:tracking-widest">
         <span class="text-4xl font-extrabold md:text-5xl lg:text-6xl">Here's some public stuff I've done</span>
     </span>
-    <div class="w-4/5 max-w-7xl mt-12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-4 sm:p-8 gap-8">
+    <x-svg.arrow class="w-16 h-16 mx-auto animate-bounce" />
+    <div class="w-4/5 max-w-7xl mt-12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 p-4 sm:p-8 gap-8">
         <a href="https://laravel-news.com/lifecycle-hooks-in-laravel-how-to-build-them-and-why-you-d-want-to"
             target="_blank">
             <article
