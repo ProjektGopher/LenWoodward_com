@@ -39,49 +39,61 @@
         <x-open-graph />
     </head>
     <body class="antialiased">
+        <div class="bg-gradient-to-b from-sky-300 via-sky-500 to-sky-400">
+            <div class="relative overflow-hidden">
+                <div x-data="{ navOpen: false }" class="relative pt-6 pb-48 sm:pb-56 lg:pb-64">
+                <x-nav />
 
-        <div class="relative overflow-hidden bg-white">
-            <div x-data="{ navOpen: false }" class="relative pt-6 pb-48 sm:pb-56 lg:pb-64 bubbles">
-            <x-nav />
-
-            @if (isset($company))
-                <x-dynamic-component :component="$company->slug.'.hey'" />
-            @endif
-            </div>
-        </div>
-
-        <div class="w-full bg-gradient-to-tr from-blue-300 to-blue-500 h-128">
-            <div class="flex flex-col md:flex-row w-full md:w-4/5 mx-auto gap-24">
-                <div class="relative mx-8 md:mx-0 w-4/5 xl:w-1/2">
-                    <a id="who" class="sr-only">Who am I?</a>
-                    <img src="{{ asset('img/profile.jpg') }}" alt="Len Woodward" class="inline h-64 -mt-32 border-8 border-gray-500 rounded-full">
-                    <span class="inline-block mt-12 ml-4 text-4xl font-extrabold transform -rotate-3 md:-rotate-6">What's up?</span>
-                    <span class="inline-block ml-4 text-4xl font-thin">My name's Len.</span>
-                    <span class="inline-block ml-1 text-2xl text-blue-100 opacity-75 font-extralight">(He/Him/His)</span>
-                    <p class="mt-4 text-lg text-gray-900 xl:text-xl font-extralight md:leading-relaxed xl:leading-loose">
-                        I live with my wife <a href="https://www.twitter.com/teacherhorstead" target="_blank" class="text-indigo-50">Ashlyn</a>,
-                        and two children (Allison and Everett) about 40 minutes east of Vancouver, Canada, in Maple Ridge.
-                        I acknowledge that where I work, live, and play, is on the unceded territory of the Kwantlen and Katzie communities.
-                    </p>
-                    <p class="mt-4 text-lg text-gray-900 xl:text-xl font-extralight md:leading-relaxed xl:leading-loose">
-                        I've been working with code in one form or another since about 2003 when I was writing Visual Basic in high school.
-                        I also started dabbling in some simple HTML at that time. I got my first paid programming gig in 2005.
-                        It was a subscription based math tutoring app, but being fresh out of school, it was not good.
-                    </p>
-                </div>
-
-                <div class="px-4 py-16 bg-blue-300 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12 hidden xl:block">
-                    <x-lets-chat />
+                @if (isset($company))
+                    <x-dynamic-component :component="$company->slug.'.hey'" />
+                @endif
                 </div>
             </div>
-            <svg class="w-full h-24 mt-24" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 1440 79.6584
-                    C 1410.22 98.8649 1023.24 130.442 773.857 108.956
-                    C 441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584
-                    Z"
-                    fill="white"
-                />
-            </svg>        
+
+            <div class="w-full h-128">
+                <div class="flex flex-col md:flex-row mx-auto gap-24 lg:max-w-7xl items-start">
+                    <div class="relative mx-8 md:mx-0">
+                        <div class="flex justify-start items-center gap-x-8">
+                            <img src="{{ asset('img/profile.jpg') }}" alt="Len Woodward" class="inline h-64 border-8 border-sky-200 shadow-lg rounded-full">
+
+                            <div class="space-y-4">
+                                <p class="text-sky-900 text-5xl font-thin transform -rotate-3 md:-rotate-3">What's up?</p>
+                                <p class="text-sky-900 text-5xl font-bold">I'm Len Woodward</p>
+                            </div>
+                        </div>
+
+                        <h2 class="mt-16 text-6xl font-bold text-sky-900">
+                            I want to write <span class="text-white">code</span> that <br />
+                            <mark class="pb-3 px-3 bg-sky-900 bg-opacity-75 text-7xl leading-relaxed">
+                                <span class="bg-clip-text text-transparent bg-white">
+                                    makes <em class="text-sky-300">you</em> money
+                                </span>
+                            </mark>
+                        </h2>
+                        
+                        <p class="hidden mt-16 text-lg text-sky-50 xl:text-3xl font-extralight" style="text-wrap: balance">
+                            Through in-person conferences like PhpTek and Laracon, local ‘un&#8209;conferences’, paid courses and (e)books, YouTube,
+                            podcasts, and blog posts, I’ve been able to develop a pragmatic philosophy as a developer: tests build confidence,
+                            simplicity over cleverness, code should be beautiful, YAGNI, and great documentation is invaluable.
+                        </p>
+                    </div>
+
+                    <div class="px-4 bg-gradient-to-b from-sky-100 to-sky-200 shadow-lg sm:px-6 lg:col-span-2 lg:px-8 lg:py-8 hidden xl:block rounded-2xl">
+                        <x-lets-chat />
+                    </div>
+                </div>
+                <svg class="w-full h-24 mt-48" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 1440 79.6584
+                        C 1410.22 98.8649 1023.24 130.442 773.857 108.956
+                        C 441.094 80.2875 364.84 -70.7376 0 40.1062
+                        V129
+                        H1442
+                        V79.6584
+                        Z"
+                        fill="white"
+                    />
+                </svg>        
+            </div>
         </div>
 
         @if (isset($company))
@@ -89,13 +101,8 @@
         @endif
 
         <div class="w-full my-32">
-            <div class="xl:flex w-4/5 mx-auto text-lg leading-relaxed text-gray-900 2xl:w-8/12 md:leading-loose md:text-xl font-extralight">
-                <div class="w-full 2xl:w-1/2">
-                    <x-my-story />
-                </div>
-                <div class="hidden 2xl:flex items-center flex-1">
-                    <x-svg.family-portrait class="w-full aspect-[3/2]" />
-                </div>
+            <div class="mx-auto text-lg leading-relaxed text-gray-900 md:leading-loose md:text-xl font-extralight">
+                <x-pricing.pricing />
             </div>
         </div>
 

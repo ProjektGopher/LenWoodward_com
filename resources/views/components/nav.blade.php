@@ -1,9 +1,9 @@
-<nav class="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6" aria-label="Global">
+<nav class="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6 xl:px-0" aria-label="Global">
     <div class="flex items-center flex-1">
         <div class="flex items-center justify-between w-full md:w-auto">
-            <a href="#">
+            <a href="{{ route('home') }}">
                 <span class="sr-only">Len Woodward</span>
-                <span class="p-2 ml-3 text-xl font-extrabold text-blue-100 bg-blue-600 rounded-lg">LW</span>
+                <span class="p-2 ml-3 text-xl font-extrabold text-sky-100 bg-sky-600 rounded-lg">LW</span>
             </a>
             {{-- md:hidden download resume --}}
             <div class="flex items-center -mr-2 md:hidden">
@@ -20,12 +20,12 @@
                 </button>
             </div>
         </div>
-        <div class="hidden md:block md:ml-10 md:space-x-10">
-            <a href="#who" class="font-medium text-gray-500 hover:text-gray-900">Who am I?</a>
-            <a href="#what" class="font-medium text-gray-500 hover:text-gray-900">What am I good at?</a>
-            {{-- <a href="#why" class="font-medium text-gray-500 hover:text-gray-900">Why Tighten?</a> --}}
-            <a href="#how" class="font-medium text-gray-500 hover:text-gray-900">How to reach me</a>
-            <a href="https://github.com/ProjektGopher/LenWoodward_com" class="font-medium text-gray-500 hover:text-gray-900">This Repo</a>
+        <div class="hidden md:block md:ml-10 md:space-x-4">
+            <a href="{{ route('who-am-i') }}" class="font-medium text-sky-900 hover:text-sky-700 hover:bg-white hover:bg-opacity-20 p-4 rounded-lg animate duration-150 transition-all">Who am I?</a>
+            <a href="#what" class="font-medium text-sky-900 hover:text-sky-700 hover:bg-white hover:bg-opacity-20 p-4 rounded-lg animate duration-150 transition-all">What am I good at?</a>
+            {{-- <a href="#why" class="font-medium text-sky-900 hover:text-sky-700 hover:bg-white hover:bg-opacity-20 p-4 rounded-lg animate duration-150 transition-all">Why Tighten?</a> --}}
+            <a href="#how" class="font-medium text-sky-900 hover:text-sky-700 hover:bg-white hover:bg-opacity-20 p-4 rounded-lg animate duration-150 transition-all">How to reach me</a>
+            <a href="https://github.com/ProjektGopher/LenWoodward_com" class="font-medium text-sky-900 hover:text-sky-700 hover:bg-white hover:bg-opacity-20 p-4 rounded-lg animate duration-150 transition-all">This Repo</a>
             {{-- Download Resume --}}
         </div>
     </div>
@@ -46,7 +46,9 @@
     <div class="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
         <div class="flex items-center justify-between px-5 pt-4">
             <div>
-                <span class="p-2 text-xl font-extrabold text-blue-100 bg-blue-600 rounded-lg">LW</span>
+                <a href="{{ route('home') }}">
+                    <span class="p-2 text-xl font-extrabold text-blue-100 bg-blue-600 rounded-lg">LW</span>
+                </a>
             </div>
             <div class="-mr-2">
                 <button @click="navOpen = false" type="button"
@@ -63,8 +65,8 @@
         </div>
         <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
             <div class="px-2 pt-2 pb-3 space-y-1" role="none">
-                <a href="#who"
-                    class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                <a href="{{ route('who-am-i')}}"
+                    class="block px-3 py-2 text-base font-medium text-blue-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                     role="menuitem">Who am I?</a>
                 <a href="#what"
                     class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
