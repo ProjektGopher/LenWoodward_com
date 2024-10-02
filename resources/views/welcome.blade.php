@@ -131,7 +131,14 @@
                 </p>
             </div>
             <svg class="w-full h-24 mt-24 text-pink-200" style="transform: scaleX(-1)" viewBox="0 0 1440 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1440 79.6584C1410.22 98.8649 1023.24 130.442 773.857 108.956C441.094 80.2875 364.84 -70.7376 0 40.1062V128H1440V79.6584Z" fill="currentcolor"/>
+                <path d="M1440 79.6584
+                    C1410.22 98.8649 1023.24 130.442 773.857 108.956
+                    C441.094 80.2875 364.84 -70.7376 0 40.1062
+                    V130
+                    H1442
+                    V79.6584
+                    Z" fill="currentcolor"
+                />
             </svg>  
         </div>
 
