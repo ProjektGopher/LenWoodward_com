@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/for-{company:slug}', function (\App\Models\Company $company) {
     return view('welcome', ['company' => $company]);
 });
+
+Route::get('/who-am-i', function () {
+    return view('who-am-i');
+})->name('who-am-i');
