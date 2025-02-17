@@ -46,7 +46,7 @@
           <p class="mt-4 text-sm leading-6 text-gray-600">Your project will get all of my paid development time. You will be my only client.</p>
           <p class="mt-6 flex items-baseline gap-x-1">
             <!-- Price, update based on frequency toggle state -->
-            <span class="text-4xl font-bold tracking-tight text-gray-900">$10,000</span>
+            <span class="text-4xl font-bold tracking-tight text-gray-900">$12,000</span>
             <!-- Payment frequency, update based on frequency toggle state -->
             <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
           </p>
@@ -77,7 +77,7 @@
           <p class="mt-4 text-sm leading-6 text-gray-600">Your project will take priority over my regular open source work and personal projects.</p>
           <p class="mt-6 flex items-baseline gap-x-1">
             <!-- Price, update based on frequency toggle state -->
-            <span class="text-4xl font-bold tracking-tight text-gray-900">$14,000</span>
+            <span class="text-4xl font-bold tracking-tight text-gray-900">$16,000</span>
             <!-- Payment frequency, update based on frequency toggle state -->
             <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
           </p>
