@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+        @vite('resources/css/app.css')
         <link rel="shortcut icon" href="{{ asset('img/icon.png')}}" type="image/png" />
 
         <title>Len Woodward @if (isset($company)) | {{ $company->name }} Application @endif </title>
@@ -34,7 +34,7 @@
         
         @livewireStyles
 
-        <script src="{{ mix('js/app.js') }}" defer></script>
+        @vite('resources/js/app.js')
 
         <x-open-graph />
     </head>
