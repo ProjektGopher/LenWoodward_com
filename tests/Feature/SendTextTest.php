@@ -12,7 +12,7 @@ use Tests\TestCase;
 class SendTextTest extends TestCase
 {
     /** @test */
-    public function welcome_page_loads_send_text_component()
+    public function welcome_page_loads_send_text_component(): void
     {
         $this->get('/')
             ->assertSeeLivewire('send-text')
@@ -20,7 +20,7 @@ class SendTextTest extends TestCase
     }
 
     /** @test  */
-    public function name_is_required()
+    public function name_is_required(): void
     {
         Livewire::test(SendText::class)
             ->set('name', '')
@@ -29,7 +29,7 @@ class SendTextTest extends TestCase
     }
 
     /** @test  */
-    public function company_is_required()
+    public function company_is_required(): void
     {
         Livewire::test(SendText::class)
             ->set('company', '')
@@ -38,7 +38,7 @@ class SendTextTest extends TestCase
     }
 
     /** @test  */
-    public function message_is_required()
+    public function message_is_required(): void
     {
         Livewire::test(SendText::class)
             ->set('message', '')
@@ -47,7 +47,7 @@ class SendTextTest extends TestCase
     }
 
     /** @test */
-    public function it_sends_api_call_when_filled_properly()
+    public function it_sends_api_call_when_filled_properly(): void
     {
         Notification::fake();
 
@@ -66,7 +66,7 @@ class SendTextTest extends TestCase
     }
 
     /** @test */
-    public function it_fails_silently_if_honeypot_field_is_filled()
+    public function it_fails_silently_if_honeypot_field_is_filled(): void
     {
         Notification::fake();
 
