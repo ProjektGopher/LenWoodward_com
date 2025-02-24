@@ -31,8 +31,9 @@ class SendText extends Component
 
         $this->validate();
         $message = "Hi Len, this is $this->name from $this->company, and $this->message";
-        Notification::route('nexmo', '16049922418')
-            ->notify(new MessageReceived($message));
+        // TODO: Use Twilio for this. Or Vonage. We don't really care. But that is for another day.
+        // Notification::route('nexmo', '16049922418')
+        //     ->notify(new MessageReceived($message));
 
         $this->name = '';
         $this->company = '';
