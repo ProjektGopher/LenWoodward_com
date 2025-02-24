@@ -2,18 +2,15 @@
 
 namespace Tests\Feature;
 
-use Livewire\Livewire;
 use App\Http\Livewire\SendText;
 use App\Notifications\MessageReceived;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Support\Facades\Notification;
 use Illuminate\Notifications\AnonymousNotifiable;
+use Illuminate\Support\Facades\Notification;
+use Livewire\Livewire;
 use Tests\TestCase;
 
 class SendTextTest extends TestCase
 {
-
     /** @test */
     public function welcome_page_loads_send_text_component()
     {
@@ -23,7 +20,7 @@ class SendTextTest extends TestCase
     }
 
     /** @test  */
-    function name_is_required()
+    public function name_is_required()
     {
         Livewire::test(SendText::class)
             ->set('name', '')
@@ -32,7 +29,7 @@ class SendTextTest extends TestCase
     }
 
     /** @test  */
-    function company_is_required()
+    public function company_is_required()
     {
         Livewire::test(SendText::class)
             ->set('company', '')
@@ -41,7 +38,7 @@ class SendTextTest extends TestCase
     }
 
     /** @test  */
-    function message_is_required()
+    public function message_is_required()
     {
         Livewire::test(SendText::class)
             ->set('message', '')
@@ -64,10 +61,10 @@ class SendTextTest extends TestCase
         Notification::assertSentTo(
             new AnonymousNotifiable,
             MessageReceived::class
-);
+        );
 
     }
-    
+
     /** @test */
     public function it_fails_silently_if_honeypot_field_is_filled()
     {
@@ -83,5 +80,4 @@ class SendTextTest extends TestCase
 
         Notification::assertNothingSent();
     }
-
 }

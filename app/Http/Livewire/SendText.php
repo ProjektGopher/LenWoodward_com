@@ -2,16 +2,18 @@
 
 namespace App\Http\Livewire;
 
-use Illuminate\Support\Facades\Notification;
 use App\Notifications\MessageReceived;
+use Illuminate\Support\Facades\Notification;
 use Livewire\Component;
-
 
 class SendText extends Component
 {
     public $name;
+
     public $company;
+
     public $message;
+
     public $from; // honeypot field
 
     protected $rules = [
@@ -23,13 +25,16 @@ class SendText extends Component
     public function send()
     {
         // Fail silently if honeypot field is not empty
-        if($this->from != '') return;
+        if ($this->from != '') {
+            return;
+        }
 
         $this->validate();
         $message = "Hi Len, this is $this->name from $this->company, and $this->message";
-        Notification::route('nexmo', '16049922418')
-            ->notify(new MessageReceived($message));
-        
+        // TODO: Use Twilio for this. Or Vonage. We don't really care. But that is for another day.
+        // Notification::route('nexmo', '16049922418')
+        //     ->notify(new MessageReceived($message));
+
         $this->name = '';
         $this->company = '';
         $this->message = '';
