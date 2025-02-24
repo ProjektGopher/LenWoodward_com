@@ -2,8 +2,8 @@
 
 namespace App\Console\Commands;
 
-use Illuminate\Console\Command;
 use App\Models\FeaturedPhpProject;
+use Illuminate\Console\Command;
 
 class FetchFeaturedPackages extends Command
 {
