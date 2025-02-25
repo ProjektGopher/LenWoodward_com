@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Notification;
 use Livewire\Livewire;
 use Tests\TestCase;
 
-class SendTextTest extends TestCase
+final class SendTextTest extends TestCase
 {
     #[Test]
     public function welcome_page_loads_send_text_component(): void
