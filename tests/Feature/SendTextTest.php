@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Http\Livewire\SendText;
 use App\Notifications\MessageReceived;
 use Illuminate\Notifications\AnonymousNotifiable;
@@ -9,9 +10,9 @@ use Illuminate\Support\Facades\Notification;
 use Livewire\Livewire;
 use Tests\TestCase;
 
-class SendTextTest extends TestCase
+final class SendTextTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function welcome_page_loads_send_text_component(): void
     {
         $this->get('/')
@@ -19,7 +20,7 @@ class SendTextTest extends TestCase
             ->assertSee('dope');
     }
 
-    /** @test  */
+    #[Test]
     public function name_is_required(): void
     {
         Livewire::test(SendText::class)
@@ -28,7 +29,7 @@ class SendTextTest extends TestCase
             ->assertHasErrors(['name' => 'required']);
     }
 
-    /** @test  */
+    #[Test]
     public function company_is_required(): void
     {
         Livewire::test(SendText::class)
@@ -37,7 +38,7 @@ class SendTextTest extends TestCase
             ->assertHasErrors(['company' => 'required']);
     }
 
-    /** @test  */
+    #[Test]
     public function message_is_required(): void
     {
         Livewire::test(SendText::class)
@@ -46,7 +47,7 @@ class SendTextTest extends TestCase
             ->assertHasErrors(['message' => 'required']);
     }
 
-    /** @test */
+    #[Test]
     public function it_sends_api_call_when_filled_properly(): void
     {
         Notification::fake();
@@ -65,7 +66,7 @@ class SendTextTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_fails_silently_if_honeypot_field_is_filled(): void
     {
         Notification::fake();
