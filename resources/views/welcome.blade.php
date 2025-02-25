@@ -32,8 +32,6 @@
             }
         </style>
         
-        @livewireStyles
-
         @vite('resources/js/app.js')
 
         <x-open-graph />
