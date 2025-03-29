@@ -25,6 +25,6 @@ Route::get('/who-am-i', function () {
     return view('who-am-i');
 })->name('who-am-i');
 
-Route::post('/satis/authenticate', function () {
+Route::get('/satis/authenticate', function () {
     return response('valid', 200);
 });
