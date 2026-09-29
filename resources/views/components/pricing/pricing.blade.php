@@ -16,7 +16,7 @@
             <!-- Price, update based on frequency toggle state -->
             <span class="text-4xl font-bold tracking-tight text-gray-900">$6,000</span>
             <!-- Payment frequency, update based on frequency toggle state -->
-            <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
+            <span class="relative text-sm font-semibold leading-6 text-gray-600">/month<span class="absolute bottom-full left-0 transform translate-y-1 text-xs font-medium leading-none tracking-wide text-gray-400">USD</span></span>
           </p>
           <a
             aria-describedby="tier-part-time" 
@@ -48,7 +48,7 @@
             <!-- Price, update based on frequency toggle state -->
             <span class="text-4xl font-bold tracking-tight text-gray-900">$12,000</span>
             <!-- Payment frequency, update based on frequency toggle state -->
-            <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
+            <span class="relative text-sm font-semibold leading-6 text-gray-600">/month<span class="absolute bottom-full left-0 transform translate-y-1 text-xs font-medium leading-none tracking-wide text-gray-400">USD</span></span>
           </p>
           <a
             aria-describedby="tier-full-time"
@@ -79,7 +79,7 @@
             <!-- Price, update based on frequency toggle state -->
             <span class="text-4xl font-bold tracking-tight text-gray-900">$16,000</span>
             <!-- Payment frequency, update based on frequency toggle state -->
-            <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
+            <span class="relative text-sm font-semibold leading-6 text-gray-600">/month<span class="absolute bottom-full left-0 transform translate-y-1 text-xs font-medium leading-none tracking-wide text-gray-400">USD</span></span>
           </p>
           <a
             aria-describedby="tier-exclusive"
